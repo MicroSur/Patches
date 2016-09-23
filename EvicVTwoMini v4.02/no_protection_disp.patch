@@ -1,0 +1,7 @@
+<PatchName>No annoying temp Protection displayed
+<Eng Description>No word Protection displayed in TC modes when temp protection occure.
+<Rus Description>При достижении порога поддержания температуры слово Protection не высвечивается. Продолжает показываться текущая, поддерживаемая, температура.
+# eVic_VTwo_Mini_V4.02.bin #Sur
+# change BHI to B, no if, just ignore Protection sub
+ 
+8ADF: D8: E0

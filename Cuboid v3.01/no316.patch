@@ -1,0 +1,10 @@
+<PatchName>Delete 316 label
+<Eng Description>Delete 316 label in TEMP SS mode.
+<Rus Description>Удаление 316 из надписи TEMP SS316.
+
+# in normal state #
+6A8A: 04: 0D
+6A8B: 22: E0
+# while pressing fire button #
+7804: 04: 0D
+7805: 22: E0

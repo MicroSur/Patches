@@ -1,0 +1,70 @@
+<PatchName>Display brightness 75%
+<Eng Description>Set display brightness to 75%.
+<Rus Description>яркость экрана 75%.
+# eVic_VTC_Mini_V3.02.bin #
+# value 7F - 50%, C0 - 75%, FF - 100%
+
+# Branch 1
+4AE4: AF: 07
+4AE5: 20: F0
+4AE6: FF: 8E
+4AE7: F7: BD
+# Branch 2
+4D96: AF: 07
+4D97: 20: F0
+4D98: FF: 40
+4D99: F7: BC
+
+# Cut-in 1
+C604: 00: 81 ; cmd set brightness 2 bytes
+C605: 00: 20 ;
+C606: 00: F8 ; send to display sub 4 bytes
+C607: 00: F7 
+C608: 00: B9 
+C609: 00: F9 
+C60A: 00: C0 ; value 2 bytes
+C60B: 00: 20 
+C60C: 00: F8 ; send to display sub 4 bytes
+C60D: 00: F7 
+C60E: 00: B6 
+C60F: 00: F9 
+C610: 00: AF ; cmd display on 2 bytes
+C611: 00: 20 
+C612: 00: F8 ; send to display sub 4 bytes
+C613: 00: F7 
+C614: 00: B3 
+C615: 00: F9 
+C616: 00: F8 ; go back B.W 4 bytes
+C617: 00: F7
+C618: 00: 68
+C619: 00: BA
+
+# Cut-in 2
+C61A: 00: 81
+C61B: 00: 20
+
+C61C: 00: F8
+C61D: 00: F7
+C61E: 00: AE
+C61F: 00: F9
+
+C620: 00: C0 ; value
+C621: 00: 20
+
+C622: 00: F8
+C623: 00: F7
+C624: 00: AB
+C625: 00: F9
+
+C626: 00: AF
+C627: 00: 20
+
+C628: 00: F8
+C629: 00: F7
+C62A: 00: A8
+C62B: 00: F9
+
+C62C: 00: F8
+C62D: 00: F7
+C62E: 00: B6
+C62F: 00: BB

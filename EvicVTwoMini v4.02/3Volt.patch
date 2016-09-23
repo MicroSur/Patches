@@ -1,0 +1,10 @@
+<PatchName>Set 2.9 Volt lock voltage
+<Eng Description>Set 2.9 V lock voltage.
+<Rus Description>Блокировка парения при разряде батарей до указанного значения.
+# eVic_VTwo_Mini_V4.02.bin #SurPort$yii
+
+#9B = 3.1V (def), 96 = 3.0V, A0 = 3.2V , 8C = 2.8 , 92 = 2.9
+4900: 9B: 92 #@PARAM@1@1@1@0@140=2.8V;146=2.9V;150=3V;155=3.1V def;160=3.2V@
+
+#4906: 46: 46 # 70 grad for Too Hot
+#AEF2: 46: 46

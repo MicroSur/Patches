@@ -1,0 +1,10 @@
+<PatchName>Fire button clicks changing (3, 2, 4, 5)
+<Eng Description>Changing the number of clicks on the Fire button to call the various events.
+<Rus Description>Изменение количества нажатий на кнопку Пуск для вызова событий.
+# 4.02_EvicVTwo_mini #Sur
+
+5C24: 05: 03 ; on-off clicks @PARAM@1@1@1@0@Fire clicks for On/Off@Клики Пуск для Вкл-Выкл мода
+5C2E: 03: 02 ; menu          @PARAM@2@1@1@0@... for Menu@... для вызова Меню
+5C36: 0A: 04 ; show temp     @PARAM@3@1@1@0@... for mod temperature screen@... для показа температуры мода
+5C3A: 14: 05 ; show fw ver   @PARAM@4@1@1@0@... for FW version screen@... для показа версии ПО
+

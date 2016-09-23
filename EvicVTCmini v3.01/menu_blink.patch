@@ -1,0 +1,8 @@
+<PatchName>Faster menu blink
+<Eng Description>Set blink in menu mode faster.
+<Rus Description>Увеличение частоты мигания при выборе в режиме меню.
+
+# eVic_VTC_Mini_V3.01.bin #
+# Set blink frequency to 2 Hz # 19
+
+7CDE: 32: 24

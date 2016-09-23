@@ -1,0 +1,47 @@
+<PatchName>Lock real resistance
+<Eng Description>Lock real current resistance. Сonvenient to use with real resistance in 3rd line patch.
+<Rus Description>Блокировка текущего реального сопротивления атомайзера. Сняли блок - атом остыл - установили блок.
+<Rus Description>Удобно использовать с патчем показа реального сопротивления в третьей строке.
+# eVic_VTWo_Mini_V4.02.bin #Sur
+
+9BF4: B8: B0 #real res
+#Ti real lock
+9B88: 00: 30
+9B89: 28: B1
+9B8A: FC: 0A
+9B8B: D0: 22
+9B90: 01: B0
+9B91: B9: FB
+9B92: A8: F2
+9B93: 83: F0
+9B95: 8B: 83
+#Ni
+9BA6: 00: 30
+9BA7: 28: B1
+9BA8: FC: 0A
+9BA9: D0: 22
+9BAE: 01: B0
+9BAF: B9: FB
+9BB0: A8: F2
+9BB1: 83: F0
+9BB3: 8B: 83
+#SS
+9BC4: 00: 38
+9BC5: 28: B1
+9BC6: FC: 0A
+9BC7: D0: 22
+9BCC: 01: B0
+9BCD: B9: FB
+9BCE: A8: F2
+9BCF: 83: F0
+9BD1: 8B: 83
+#TCR
+9BDA: 00: 38
+9BDB: 28: B1
+9BDC: FB: 0A
+9BDD: D0: 22
+9BE2: 01: B0
+9BE3: B9: FB
+9BE4: A8: F2
+9BE5: 83: F0
+9BE7: 8B: 83

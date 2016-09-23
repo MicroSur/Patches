@@ -1,0 +1,9 @@
+<PatchName>Fire button clicks changing
+<Eng Description>Changing the number of clicks on the Fire button to call the various events.
+<Rus Description>Изменение количества нажатий на кнопку Пуск для вызова соответствующих событий.
+#3.12_Cuboid_fire_click.patch
+
+4ABA: 05: 03 ; on-off clicks 5 -> 3
+4AC4: 03: 02 ; call menu     3 -> 2
+4ACC: 0A: 05 ; show temp    10 -> 5
+4AD0: 14: 06 ; show fw ver  20 -> 6

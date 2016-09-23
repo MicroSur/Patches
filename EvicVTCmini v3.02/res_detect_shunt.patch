@@ -1,0 +1,11 @@
+<PatchName>Correction of coil Res detection
+<Eng Description>Change the resistance of the measuring shunt for the proper determination of the coil resistance.
+<Rus Description>Изменение сопротивления шунта для более точного измерения сопротивления спирали.
+# eVic_VTC_Mini_V3.02.bin #Sur
+
+#Set and uncomment your Hardware line
+#1594: 73: 73 ; HW 1.00, 1.02, default
+#15CC: 7D: 7D ;    1.01, 1.08
+#15D0: 6E: 6E ;    1.03, 1.04, 1.05, 1.06
+#15D4: 78: 78 ;    1.07, 1.09
+#15D8: 69: 69 ;    1.10, 1.11

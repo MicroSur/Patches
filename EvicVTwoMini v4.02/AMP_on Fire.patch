@@ -1,0 +1,37 @@
+<PatchName>Amp on Fire 
+<Eng Description>Always show Amp in 3-rd line when Fire.
+<Rus Description>Принудительный показ Амперов при парении в третьей строке.
+# eVic_VTwo_Mini_V4.02.bin #Sur
+
+851A: 9B: 06 #goto cut
+851B: F8: F0
+851C: 18: 7C
+851D: 00: BF
+#cut
+F416: 00: 05 #Fire detect
+F417: FF: 4F
+F418: FF: 38
+F419: FF: 88
+F41A: 07: C0
+F41B: 07: 05
+F41C: 07: 02
+F41D: FF: D5
+F41E: FF: 5F
+F41F: FF: 46
+F420: 00: F9 #to AMP print
+F421: 00: F7
+F422: 00: 8B
+F423: 9F: B8
+F424: 9F: 9B #ret normal if no Fire
+F425: 9F: F8
+F426: 9C: 18
+F427: 9C: 00
+F428: 9C: F9
+F429: 9F: F7
+F42A: 9F: 79
+F42B: 9F: B8
+#data
+F42C: 00: 68
+F42D: 00: 00
+F42E: 00: 00
+F42F: FF: 20

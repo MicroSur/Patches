@@ -1,0 +1,10 @@
+<PatchName>Probe atomizer delay
+<Eng Description>Resistance detection time increased to ~5 sec.
+<Rus Description>Увеличение времени определения сопротивления атомайзера в 2 раза.
+# eVic_VTwo_Mini_V4.02.bin #Sur probe_atom_delay.patch
+
+7186: 0C: 18 #in atom probe
+71B2: 0B: 17
+4922: 0C: 18 #in events
+
+

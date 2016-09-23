@@ -1,0 +1,9 @@
+<PatchName>Realtime resistance in all modes
+<Eng Description>Display realtime resistance in all modes same.
+<Rus Description>Отображение реального сопротивления во всех режимах.
+#Reuleaux_RX200S_V4.13@Sur
+
+#real always
+6BE6: 01: 13
+6BE7: 28: E0
+

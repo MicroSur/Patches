@@ -1,0 +1,121 @@
+<PatchName>Preheat in VW mode by percent
+<Eng Description>Preheat in VW mode by adding percent of power. Check and change patch for setup.
+<Rus Description>Предварительный разогрев спирали дополнительной мощностью, указанной в процентах от выставленной.
+<Rus Description>Настройки времени и дополнительной мощности - в тексте патча.
+# eVic_VTwo_Mini_V4.02.bin #MicroSur
+
+#code
+3EB8: 00: 0B #to cut from TweakTargetVoltsVW
+3EB9: F0: F0
+3EBA: CC: 04
+3EBB: F9: BA
+
+7A52: BB: 07 #to cut from ShowMainView
+7A53: F8: F0
+7A54: 10: 1E
+7A55: 20: BC
+
+#cut from ShowMainView
+F292: 00: BB
+F293: 00: F8
+F294: 00: 10
+F295: 00: 20
+F296: 00: 0A
+F297: 00: 49
+F298: 00: 09
+F299: 00: 8C
+F29A: 00: B1
+F29B: 00: F1
+#time*10
+F29C: C0: 05  @PARAM@1@1@1@1@Preheat times (sec)@Время действия преднагрева (сек)
+F29D: 00: 0F
+F29E: 00: 0D
+F29F: 00: D8
+F2A0: 00: B9
+F2A1: 00: F8
+F2A2: 00: 00
+F2A3: 00: 30
+F2A4: 00: DB
+F2A5: 00: 05
+F2A6: 00: 09
+F2A7: 00: D5
+F2A8: 00: 0A
+F2A9: 00: 24
+#%
+F2AA: 00: 32  @PARAM@2@1@1@0@Preheat percent (%)@Процент добавочной мощности (%)
+F2AB: 00: 21
+F2AC: 00: B2
+F2AD: 00: FB
+F2AE: 00: F4
+F2AF: 00: F3
+F2B0: 00: 03
+F2B1: 00: FB
+F2B2: 00: 01
+F2B3: 00: F3
+F2B4: 00: B3
+F2B5: 00: FB
+F2B6: 00: F4
+F2B7: 00: F3
+F2B8: 00: 02
+F2B9: 00: EB
+F2BA: 00: 03
+F2BB: 00: 02
+F2BC: 00: F8
+F2BD: 00: F7
+F2BE: 00: CB
+F2BF: 00: BB
+F2C0: 00: 3C
+F2C1: 00: 00
+F2C2: 00: 00
+F2C3: 00: 20
+
+#cut from TweakTargetVoltsVW
+F2C4: 00: 09
+F2C5: 00: 49
+F2C6: 00: 09
+F2C7: 00: 8C
+F2C8: 00: B1
+F2C9: 00: F1
+#time*10
+F2CA: 00: 05  @PARAM@1
+F2CB: 00: 0F
+F2CC: 00: 09
+F2CD: 00: D8
+F2CE: 00: 0A
+F2CF: 00: 24
+#%
+F2D0: 00: 32  @PARAM@2
+F2D1: 00: 21
+F2D2: 00: B0
+F2D3: 00: FB
+F2D4: 00: F4
+F2D5: 00: F2
+F2D6: 00: 02
+F2D7: 00: FB
+F2D8: 00: 01
+F2D9: 00: F2
+F2DA: 00: B2
+F2DB: 00: FB
+F2DC: 00: F4
+F2DD: 00: F2
+F2DE: 00: 00
+F2DF: 00: EB
+F2E0: 00: 02
+F2E1: 00: 00
+F2E2: 00: F4
+F2E3: 00: F7
+F2E4: 00: B7
+F2E5: 00: FF
+F2E6: 00: F4
+F2E7: 00: F7
+F2E8: 00: E9
+F2E9: 00: BD
+F2EA: 00: 00
+F2EB: 00: 00
+F2EC: 00: 3C
+F2ED: 00: 00
+F2EE: 00: 00
+F2EF: 00: 20
+
+#screen delay after Fire 1>3 sec.
+1C44: 01: 03 @PARAM@3@1@1@0@Fire screen delay after puff (sec)@Задержка смены экрана после затяжки (сек)

@@ -1,0 +1,98 @@
+<PatchName>Battery voltage and Temp at the charge screen
+<Eng Description>Charge screen with Battery voltage and Temp.
+<Rus Description>Температура мода и напряжение аккумулятора на экране зарядки.
+# eVic_VTC_Mini_V3.02.bin #
+
+5FB8: FE: 04 ; to AC50
+5FB9: F7: F0
+5FBA: FE: 4A
+5FBB: FF: BE
+
+AC50: 00: FA  ;draw pic
+AC51: 00: F7 
+AC52: 00: B2 
+AC53: 00: F9
+# Batt/temp
+AC54: 00: 1C
+AC55: 00: B4
+AC56: 00: 11
+AC57: 00: 48
+AC58: 00: 0B
+AC59: 00: 21
+AC5A: 00: 03
+AC5B: 00: 22
+AC5C: 00: CD
+AC5D: 00: E9
+AC5E: 00: 00
+AC5F: 00: 12
+AC60: 00: 02
+AC61: 00: 23
+AC62: 00: 02
+AC63: 00: 88
+AC64: 00: 67 ; voltage pos Y
+AC65: 00: 21
+AC66: 00: 02 ; voltage pos X
+AC67: 00: 20
+AC68: 00: FA
+AC69: 00: F7
+AC6A: 00: 2A
+AC6B: 00: FA
+AC6C: 00: 81 ; V charcode
+AC6D: 00: 22
+AC6E: 00: 67 ; V pos Y
+AC6F: 00: 21
+AC70: 00: 18 ; V pos X
+AC71: 00: 20
+AC72: 00: FA
+AC73: 00: F7
+AC74: 00: A1
+AC75: 00: F9
+
+AC76: 00: 0A
+AC77: 00: 48
+AC78: 00: 0B
+AC79: 00: 21
+AC7A: 00: 02
+AC7B: 00: 22
+AC7C: 00: CD
+AC7D: 00: E9
+AC7E: 00: 00
+AC7F: 00: 12
+AC80: 00: 00
+AC81: 00: 23
+AC82: 00: 02
+AC83: 00: 78
+AC84: 00: 67 ; temperature pos Y
+AC85: 00: 21
+AC86: 00: 27 ; temperature pos X
+AC87: 00: 20
+AC88: 00: FA
+AC89: 00: F7
+AC8A: 00: 1A
+AC8B: 00: FA
+AC8C: 00: 6E ; 'C charcode
+AC8D: 00: 22
+AC8E: 00: 67 ; 'C pos Y
+AC8F: 00: 21
+AC90: 00: 35 ; 'C pos X
+AC91: 00: 20
+AC92: 00: FA
+AC93: 00: F7
+AC94: 00: 91
+AC95: 00: F9
+AC96: 00: 1C
+AC97: 00: BC 
+
+AC98: 00: FB ; RETURN
+AC99: 00: F7
+AC9A: 00: 90
+AC9B: 00: B9
+
+AC9C: 00: 58 ; data volt
+AC9D: 00: 00
+AC9E: 00: 00
+AC9F: 00: 20
+ACA0: 00: 42 ; data temp
+ACA1: 00: 00
+ACA2: 00: 00
+ACA3: 00: 20

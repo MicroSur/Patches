@@ -1,0 +1,44 @@
+<PatchName>3.02 bugs fixer
+<Eng Description>Attempt to fix auto-change watts in Power mode, more stable resistance detection.
+<Rus Description>Фикс скачков выставленной мощности и более стабильное определение сопротивления койла.
+#eVic_VTC_Mini_V3.02.bin#SuR
+
+
+90DA: 2F: 00
+90DB: 49: EE
+90DC: B2: 10
+90DD: EE: 0A
+90DE: 04: DF
+90DF: 8A: ED
+90E0: 91: 2E
+90E1: ED: 0A
+90E2: 00: B2
+90E3: 0A: EE
+90E4: F8: 04
+90E5: EE: 8A
+90E6: 40: C0
+90E7: 0A: 46
+90E8: 00: C0
+90E9: EE: 46
+90EA: 10: C0
+90EB: 0A: 46
+
+#90F0: 20: 20
+#90F1: EE: EE
+90F2: 80: 20
+#90F3: 0A: 0A
+
+9198: 8C: 00
+9199: 00: 80
+919A: 00: 3B
+919B: 20: 44
+
+#ERASE coil_voltage_to_watts link
+91E2: 00: C0
+91E3: 21: 46
+91E4: F7: C0
+91E5: F7: 46
+91E6: 0E: C0
+91E7: FE: 46
+91E8: 20: C0
+91E9: 82: 46

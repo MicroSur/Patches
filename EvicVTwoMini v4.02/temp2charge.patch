@@ -1,0 +1,23 @@
+<PatchName>Show Charge screen instead of Temp
+<Eng Description>Show Charge screen instead of Temp, Battery voltage instead of version.
+<Rus Description>По кликам вызова показаний температуры показывается экран с заставкой заряда мода. И заряд батареи вместо версии.
+# eVic_VTwo_Mini_V4.02.bin #Sur
+
+1D14: 05: FF
+1D15: F0: F7
+1D16: 0C: E9
+1D17: FE: FF
+
+#version clicks to Battery voltage screen
+1D38: 06: 05
+1D39: F0: F0
+1D3A: 98: DE
+1D3B: FF: FD
+
+#version clicks to big clock show (no tick)
+#1D38: 06: 00
+#1D39: F0: F0
+#1D3A: 98: 08
+#1D3B: FF: F8
+
+

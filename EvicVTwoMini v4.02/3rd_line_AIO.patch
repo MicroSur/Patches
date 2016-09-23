@@ -1,0 +1,501 @@
+<PatchName>3-d line AIO
+<Eng Description>In last 3rd line adds: real battery voltage, real resistance #.###, board temperature, atomizer voltage, clock.
+<Rus Description>¬ 3-ю строку добавл€ютс€ на выбор дл€ показа: реальное напр€жение батареи, реальное сопротивление спирали до третьего знака, температура мода, напр€жение на атомайзер, цифровые часы.
+<Rus Description>»з-за особенностей измерени€, сопротивление может мен€тс€ само собой в сотых и тыс€чных дол€х ќма. 
+# eVic_VTwo_Mini_V4.02.bin #SurPort
+
+0A74: 10: 00 # for RT battery
+0A75: D4: BF
+
+263C: 03: 08 # 
+523A: 03: 08 #
+
+8530: 01: 04 #to cut
+8531: 28: F0
+8532: 21: 0E
+8533: D0: BC
+#puff
+CD50: 00: 01
+CD51: 00: 28
+CD52: 00: 3B
+CD53: FF: F4
+CD54: FF: 11
+CD55: 80: AC
+#time
+CD56: 00: 02
+CD57: 00: 28
+CD58: 00: 3B
+CD59: 00: F4
+CD5A: 0F: 1C
+CD5B: FF: AC
+#battery
+CD5C: FF: 03
+CD5D: F8: 28
+CD5E: 00: 00
+CD5F: 00: F0
+CD60: 00: 14
+CD61: 00: 80
+#real res
+CD62: 3F: 04
+CD63: FF: 28
+CD64: FF: 00
+CD65: FE: F0
+CD66: 00: 27
+CD67: 00: 80
+#temp
+CD68: 00: 05
+CD69: 01: 28
+CD6A: FF: 00
+CD6B: FF: F0
+CD6C: FF: 3A
+CD6D: FF: 80
+#vout
+CD6E: 80: 06
+CD6F: 00: 28
+CD70: 00: 00
+CD71: 03: F0
+CD72: FF: 4F
+CD73: FF: 80
+#clock
+CD74: FF: 07
+CD75: FF: 28
+CD76: E0: 00
+CD77: 00: F0
+CD78: 00: 95
+CD79: 0F: 80
+#reserve1
+CD7A: FF: 00 #08
+CD7B: FF: BF #28
+CD7C: FF: 00
+CD7D: FF: BF
+CD7E: F8: 00
+CD7F: 00: BF
+#reserve2
+CD80: 00: 00 #09
+CD81: 1F: BF #28
+CD82: FF: 00
+CD83: FF: BF
+CD84: FF: 00
+CD85: FF: BF
+#return
+CD86: FC: FB
+CD87: 00: F7
+CD88: 00: 17
+CD89: 7F: BC
+
+#BATT
+CD8A: FF: 42
+CD8B: FF: 48
+CD8C: FF: 5E #Y_word (5B for stock)
+CD8D: FF: 22
+CD8E: FE: 00 #X_word
+CD8F: 00: 21
+CD90: 00: 03
+CD91: FF: 26
+CD92: FF: F9
+CD93: FF: F7
+CD94: FF: 28
+CD95: FF: FD
+CD96: FF: 2F
+CD97: 00: 48
+CD98: 01: CD
+CD99: FF: E9
+CD9A: FF: 00
+CD9B: FF: 46
+CD9C: FF: 02
+CD9D: FF: 23
+CD9E: FF: 02
+CD9F: 80: 88
+CDA0: 03: 5A #Y_digit
+CDA1: FF: 21
+CDA2: FF: 18 #X_digit
+CDA3: E0: 20
+CDA4: 07: F9
+CDA5: FF: F7
+CDA6: FF: 48
+CDA7: C0: FC
+CDA8: 03: B1 #V-char
+CDA9: FF: 22
+CDAA: FE: 5D #Y_char (5C for stock)
+CDAB: 00: 21
+CDAC: 00: 37 #X_char
+CDAD: 7F: 20
+CDAE: FF: F9
+CDAF: E0: F7
+CDB0: 07: BF
+CDB1: FF: FB
+CDB2: F8: FB
+CDB3: 00: F7
+CDB4: 00: 01
+CDB5: 0F: BC
+
+#RES
+CDB6: FF: 38
+CDB7: F0: 48
+CDB8: 0F: 5E #Y_word
+CDB9: FF: 22
+CDBA: E0: 00 #X_word
+CDBB: 00: 21
+CDBC: 00: 04
+CDBD: 03: 26
+CDBE: FF: F9
+CDBF: F8: F7
+CDC0: 0F: 12
+CDC1: FF: FD
+CDC2: 80: 25
+CDC3: 00: 48
+CDC4: 00: CD
+CDC5: 00: E9
+CDC6: FF: 00
+CDC7: F8: 46
+CDC8: 1F: 03
+CDC9: FF: 23
+CDCA: 00: 02
+CDCB: 00: 88
+CDCC: 00: 5A #Y_digit
+CDCD: 00: 21
+CDCE: 7F: 10 #X_digit
+CDCF: FC: 20
+CDD0: 1F: F9
+CDD1: FE: F7
+CDD2: 00: 32
+CDD3: 00: FC
+CDD4: 00: C0 #Ohm-char
+CDD5: 00: 22
+CDD6: 3F: 5D #Y_char
+CDD7: FC: 21
+CDD8: 1F: 38 #X_char
+CDD9: FC: 20
+CDDA: 00: F9
+CDDB: 00: F7
+CDDC: 00: A9
+CDDD: 00: FB
+CDDE: 1F: FB
+CDDF: FC: F7
+CDE0: 00: EB
+CDE1: 00: BB
+
+#TEMP
+CDE2: 00: 2E
+CDE3: 00: 48
+CDE4: 00: 5E #Y_word
+CDE5: 00: 22
+CDE6: 00: 00 #X_word
+CDE7: 00: 21
+CDE8: 00: 02
+CDE9: 00: 27
+CDEA: 00: F9
+CDEB: 00: F7
+CDEC: 00: FC
+CDED: 00: FC
+CDEE: 00: 1B
+CDEF: 00: 48
+CDF0: 00: CD
+CDF1: 00: E9
+CDF2: 00: 00
+CDF3: 00: 47
+CDF4: 00: 00
+CDF5: 00: 23
+CDF6: 00: 02
+CDF7: 00: 78
+CDF8: 00: 5A #Y_digit
+CDF9: 00: 21
+CDFA: 00: 23 #X_digit
+CDFB: 00: 20
+CDFC: 00: F9
+CDFD: 00: F7
+CDFE: 00: 1C
+CDFF: 00: FC
+CE00: 00: 9E #C-char
+CE01: 00: 22
+CE02: 00: 5D #Y_char
+CE03: 00: 21
+CE04: 00: 38 #X_char
+CE05: 00: 20
+CE06: 00: F9
+CE07: 00: F7
+CE08: 00: 93
+CE09: 00: FB
+CE0A: 00: FB
+CE0B: 00: F7
+CE0C: 00: D5
+CE0D: 00: BB
+
+#VOUT
+CE12: 1F: 23
+CE13: FC: 48
+CE14: 00: 5E #Y_word
+CE15: 00: 22
+CE16: 00: 00 #X_word
+CE17: 00: 21
+CE18: 1F: F9
+CE19: FC: F7
+CE1A: 1F: E5
+CE1B: FE: FC
+CE1C: 00: 10
+CE1D: 00: 4F
+CE1E: 00: 38
+CE1F: 00: 88
+CE20: 3F: 03
+CE21: FC: 27
+CE22: 1F: 02
+CE23: FF: 23
+CE24: 00: C0
+CE25: 00: 05
+CE26: 00: 06
+CE27: 00: D5
+CE28: 7F: 0E
+CE29: FC: 48
+CE2A: 0F: CD
+CE2B: FF: E9
+CE2C: 80: 00
+CE2D: 00: 47
+CE2E: 00: 02
+CE2F: 00: 88
+CE30: FF: 5A #Y_digit
+CE31: F8: 21
+CE32: 0F: 18 #X_digit
+CE33: FF: 20
+CE34: E0: 04
+CE35: 00: E0
+CE36: 00: 00
+CE37: 03: 22
+CE38: FF: 5A #Y_0_digit
+CE39: F8: 21
+CE3A: 07: 18 #X_0_digit
+CE3B: FF: 20
+CE3C: F8: CD
+CE3D: 00: E9
+CE3E: 00: 00
+CE3F: 0F: 47
+CE40: FF: F9
+CE41: F0: F7
+CE42: 03: FA
+CE43: FF: FB
+CE44: FE: B1 #V-char
+CE45: 00: 22
+CE46: 00: 5D #Y_char
+CE47: 7F: 21
+CE48: FF: 38 #X_char
+CE49: E0: 20
+CE4A: 03: F9
+CE4B: FF: F7
+CE4C: FF: 71
+CE4D: E0: FB
+CE4E: 07: FB
+CE4F: FF: F7
+CE50: FF: B3
+CE51: C0: BB
+
+#data
+CE52: 01: 00
+CE53: FF: 00
+
+CE54: FF: 60 #res
+CE55: FF: 00
+CE56: FF: 00
+CE57: FF: 20
+
+CE58: FF: B0 #batt
+CE59: 80: 00
+CE5A: 00: 00
+CE5B: FF: 20
+
+CE5C: FF: 48 #temp
+CE5D: FF: 00
+CE5E: FF: 00
+CE5F: FF: 20
+
+CE60: FF: 68 #flags
+CE61: 00: 00
+CE62: 00: 00
+CE63: 7F: 20
+
+CE64: FF: D4 #vout
+CE65: FF: 00
+CE66: FF: 00
+CE67: FF: 20
+
+CE68: FE: 69 #batt word
+CE69: 00: 00
+CE6A: 00: 68
+CE6B: 1F: 00
+CE6C: FF: 7B
+CE6D: FF: 00
+CE6E: FF: 7B
+CE6F: FF: 00
+CE70: FC: 00
+CE73: 0F: 00
+
+CE74: FF: 79 #rs word
+CE75: FF: 00
+CE76: FF: 7A
+CE77: FF: 00
+CE78: F8: 00
+CE79: 00: 00
+CE7A: 00: 00
+CE7B: 03: 00
+
+CE7C: FF: 7B #temp word
+CE7D: FF: 00
+CE7E: FF: 6C
+CE7F: FF: 00
+CE80: E0: 74
+CE81: 00: 00
+CE82: 00: 77
+CE83: 01: 00
+CE84: FF: 00
+CE85: FF: 00
+CE86: FF: 00
+CE87: FF: 00
+
+CE88: 80: 7D #vout word
+CE89: 00: 00
+CE8A: 00: 76
+CE8B: 00: 00
+CE8C: 3F: 7C
+CE8D: FF: 00
+CE8E: FF: 7B
+CE8F: FE: 00
+CE90: 00: 00
+CE91: 00: 00
+
+CE94: 0F: 68 #pointers to new words
+CE95: FF: CE
+CE96: FF: 00
+CE97: F8: 00
+CE98: 00: 74
+CE99: 00: CE
+CE9A: 00: 00
+CE9B: 00: 00
+CE9C: 00: 7C
+CE9D: FF: CE
+CE9E: FF: 00
+CE9F: 80: 00
+CEA0: 00: 88
+CEA1: 00: CE
+CEA2: 00: 00
+CEA3: 00: 00
+
+#CLOCK
+CEA4: 00: 24 #prepare
+CEA5: 00: 21
+CEA6: 00: 03
+CEA7: 00: A8
+CEA8: 00: F3
+CEA9: 00: F7
+CEAA: 00: A9
+CEAB: 00: F9
+CEAC: 00: 03
+CEAD: 00: A8
+CEAE: 00: F9
+CEAF: 00: F7
+CEB0: 00: 83
+CEB1: 00: FF
+CEB2: 00: 04
+CEB3: 00: 98
+CEB4: 00: 0C
+CEB5: 00: 28
+CEB6: 00: 0D
+CEB7: 00: D8
+CEB8: 00: 05
+CEB9: 00: 98
+CEBA: 00: 1F
+CEBB: 00: 28
+CEBC: 00: 0A
+CEBD: 00: D8
+CEBE: 00: 07
+CEBF: 00: 98
+CEC0: 00: 18
+CEC1: 00: 28
+CEC2: 00: 07
+CEC3: 00: D8
+CEC4: 00: 08
+CEC5: 00: 98
+CEC6: 00: 3C
+CEC7: 00: 28
+CEC8: 00: 04
+CEC9: 00: D8
+CECA: 00: 09
+CECB: 00: 98
+CECC: 00: 3C
+CECD: 00: 28
+CECE: 00: 05
+CECF: 00: D9
+CED0: 00: 00
+CED1: 00: E0
+CED4: 3F: 24
+CED5: E0: 21
+CED6: 3F: 03
+CED7: E0: A8
+CED8: 3F: F3
+CED9: E0: F7
+CEDA: 38: 91
+CEDB: E0: F9
+CEDC: 38: 4F #code 102
+CEDD: E0: F4
+CEDE: 38: 81
+CEDF: E0: 72
+CEE0: 38: 58 #Y_code_1
+CEE1: E0: 21
+CEE2: 38: 0F #X_code_1
+CEE3: E0: 20
+CEE4: 38: F9
+CEE5: E0: F7
+CEE6: 38: 24
+CEE7: E0: FB
+CEE8: 3F: 4F #code 102
+CEE9: E0: F4
+CEEA: 3F: 81
+CEEB: E0: 72
+CEEC: 3F: 58 #Y_code_2
+CEED: E0: 21
+CEEE: 00: 26 #X_code_2
+CEEF: 00: 20
+CEF0: 00: F9
+CEF1: 00: F7
+CEF2: 3F: 1E
+CEF3: E0: FB
+CEF4: 3F: 02
+CEF5: E0: 20
+CEF6: 3F: CD
+CEF7: E0: E9
+CEF8: 38: 00
+CEF9: 00: 40
+CEFA: 38: 00
+CEFB: 00: 23
+CEFC: 38: 5A #Y_digit_hours
+CEFD: 00: 21
+CEFE: 38: 00 #X_digit_hours
+CEFF: 00: 20
+CF00: 38: 07 #hours_code_7
+CF01: 00: 9A
+CF02: 38: F9
+CF03: 00: F7
+CF04: 38: 99
+CF05: 00: FB
+CF06: 38: 5A #Y_digit_min
+CF07: 00: 21
+CF08: 38: 17 #X_digit_min
+CF09: 00: 20
+CF0A: 38: 08 #minutes_code_8
+CF0B: 00: 9A
+CF0C: 38: F9
+CF0D: 00: F7
+CF0E: 38: 94
+CF0F: 00: FB
+CF10: 38: 5A #Y_digit_sec
+CF11: 00: 21
+CF12: 38: 2E #X_digit_sec
+CF13: 00: 20
+CF14: 38: 09 #sec_code_9
+CF15: 00: 9A
+CF16: 38: F9
+CF17: 00: F7
+CF18: 38: 8F
+CF19: 00: FB
+CF1A: 38: FB
+CF1B: 00: F7
+CF1C: 38: 4D
+CF1D: 00: BB
+

@@ -1,0 +1,18 @@
+<PatchName>Shorter timeout for buttons
+<Eng Description>Shorter timeout (2.5sec) waiting for TCR-Set and Buttery volts in Off mode.
+<Eng Description>Shorter timeout (1sec) waiting for reset puff_time, flip screen, key lock.
+<Eng Description>Uncomment for Over 10sec protection set to 3s.
+<Rus Description>Время ожидания настроек кастомного TCR и показа заряда акка сокращено до 2.5 сек.
+<Rus Description>Изменение времени ожидания реакции на кнопки до 1сек (сброса тяг и времени, переворачивания экрана, лок кнопок)
+<Rus Description>Можно изменить время отсечки парения.
+# eVic_VTwo_Mini_4.02.bin #Sur
+
+5B5C: FA: 80 # for tcr set menu, battery voltage screen
+
+#can swap +- buttons 
+#5B5E: 06: 06 #fire & button-
+#5B62: 05: 05 #fire & button+
+
+5BC4: C8: 64 # key(s) press time 2s set to 1s (for reset puff_time, flip screen, key lock)
+
+#5B7E: 63: 1E # Over 10sec protection set to 3s 

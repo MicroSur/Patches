@@ -1,0 +1,15 @@
+<PatchName>Smooth Scroll speed 2
+<Eng Description>Adjust scrolling speed of power and temperature. 2 speeds, 0,1 W step.
+<Rus Description>Регулировка скорости прокрутки значений мощности и температуры. 2 скорости, шаг 0,1 Вт.
+# eVic_VTC_Mini_V3.01.bin #
+
+# Shift to the 2nd gear #
+8E52: 05: 0B ; threshold
+8ED6: 05: 0B ; threshold
+
+# Disable 3rd gear #
+30DA: 69: 0B ; must be the same as above
+
+# Repeat Delay
+30CA: 03: 04
+30D4: 03: 04

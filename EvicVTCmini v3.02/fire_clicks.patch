@@ -1,0 +1,10 @@
+<PatchName>Fire button clicks changing
+<Eng Description>Changing the number of clicks on the Fire button to call the various events.
+<Rus Description>Изменение количества нажатий на кнопку Пуск для вызова событий.
+
+#3.02_EvicVTC
+
+46E0: 05: 03 ; on-off clicks
+46EA: 03: 02 ; menu
+46F2: 0A: 05 ; show temp
+46F6: 14: 06 ; show fw ver

@@ -1,0 +1,119 @@
+<PatchName>Preheat in VW mode by percent
+<Eng Description>Preheat in VW mode by adding percent of power. Check and change patch for setup.
+<Rus Description>Предварительный разогрев спирали дополнительной мощностью, указанной в процентах от выставленной.
+<Rus Description>Настройки времени и дополнительной мощности - в тексте патча.
+#eVic_VTC_Mini_V3.02.bin #MicroSur
+
+2BE8: 00: 08 #to cut from TweakTargetVoltsVW
+2BE9: F0: F0
+2BEA: CC: C0
+2BEB: F9: B8
+
+675A: A0: 04 #to cut from ShowMainView
+675B: 7B: F0
+675C: 22: EE
+675D: 8A: BA
+
+#cut from ShowMainView
+AD3A: 00: A0
+AD3B: 1F: 7B
+AD3C: FC: 22
+AD3D: 00: 8A
+AD3E: 00: 0A
+AD3F: 00: 49
+AD40: 00: 89
+AD41: 00: 8B
+AD42: 00: B1
+AD43: 3F: F1
+#time*10
+AD44: FE: 05  @PARAM@1@1@1@1@Preheat times (sec)@Время действия преднагрева (сек)
+AD45: 00: 0F
+AD46: 00: 0D
+AD47: 00: D8
+AD48: 00: BA
+AD49: 00: F8
+AD4A: 00: 00
+AD4B: 1F: 30
+AD4C: FC: DB
+AD4D: 00: 05
+AD4E: 00: 09
+AD4F: 00: D5
+AD50: 00: 0A
+AD51: 00: 23
+#%
+AD52: 00: 1E  @PARAM@2@1@1@0@Preheat percent (%)@Процент добавочной мощности (%)
+AD53: 07: 21
+AD54: F0: B2
+AD55: 00: FB
+AD56: 00: F3
+AD57: 00: F8
+AD58: 00: 08
+AD59: 00: FB
+AD5A: 00: 01
+AD5B: 01: F8
+AD5C: C0: B8
+AD5D: 00: FB
+AD5E: 00: F3
+AD5F: 00: F8
+AD60: 00: 02
+AD61: 89: EB
+AD62: 1C: 08
+AD63: 98: 02
+AD64: 8C: FB
+AD65: E2: F7
+AD66: 25: FB
+AD67: C0: BC
+AD68: 00: 38
+AD69: 52: 00
+AD6A: 95: 00
+AD6B: 54: 20
+
+#cut from TweakTargetVoltsVW
+AD6C: 90: 09
+AD6D: 45: 49
+AD6E: 34: 89
+AD6F: 80: 8B
+AD70: 00: B1
+AD71: 52: F1
+#time*10
+AD72: 9D: 05  @PARAM@1
+AD73: 58: 0F
+AD74: 16: 09
+AD75: 45: D8
+AD76: 2C: 0A
+AD77: 80: 24
+#%
+AD78: 00: 1E  @PARAM@2
+AD79: 23: 21
+AD7A: 91: B0
+AD7B: 54: FB
+AD7C: 12: F4
+AD7D: 47: F2
+AD7E: 2C: 02
+AD7F: 80: FB
+AD80: 00: 01
+AD81: 24: F2
+AD82: 50: B2
+AD83: 94: FB
+AD84: 0C: F4
+AD85: E8: F2
+AD86: A4: 00
+AD87: 80: EB
+AD88: 00: 02
+AD8A: 00: F8
+AD8B: 00: F7
+AD8C: 00: FB
+AD8D: 00: F8
+AD8E: 00: F7
+AD8F: 00: F7
+AD90: 00: 2D
+AD91: 00: BF
+AD92: 00: 00
+AD93: 00: 00
+AD94: 00: 38
+AD95: 00: 00
+AD96: 00: 00
+AD97: 00: 20
+
+#screen delay after Fire 1>2 sec.
+F78: 01: 02 @PARAM@3@1@1@0@Fire screen delay after puff (sec)@Задержка смены экрана после затяжки (сек)

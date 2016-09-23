@@ -1,0 +1,7 @@
+<PatchName>Temperature adjustment 1 Grad
+<Eng Description>Sets the temperature adjustment step to 1 degree (in Celsius).
+<Rus Description>Устанавливает шаг регулировки температуры в 1 градус (в Цельсиях).
+# eVic_VTwo_Mini_V4.02.bin #SurPort@iNFiNUM
+
+5341: 1D: 1C ; increment
+56AB: 1F: 1E ; decrement

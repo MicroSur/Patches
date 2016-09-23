@@ -1,0 +1,15 @@
+<PatchName>Evic VTC mini to Presa75
+<Eng Description>Converts eVic VTC Mini Firmware to Presa 75.
+<Rus Description>Преобразование прошивки eVic VTC Mini в версию для Presa 75.
+
+# ProductID
+1B00: 45: 57
+1B01: 30 :30
+1B02: 35: 30
+1B03: 32: 37
+# Shunt
+155C: 73: 64 ; 1.00, 1.02, default
+1594: 7D: 64 ; 1.01, 1.08
+1598: 6E: 64 ; 1.03, 1.04, 1.05, 1.06
+159C: 78: 64 ; 1.07, 1.09
+15A0: 69: 64 ; 1.10, 1.11

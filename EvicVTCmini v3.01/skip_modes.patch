@@ -1,0 +1,78 @@
+<PatchName>Skip Modes
+<Eng Description>Skip non-used modes. Edit patch file to select which modes should be hidden.
+<Rus Description>Убирает неиспользуемые режимы из меню. Отредактируйте файл патча, чтобы выбрать скрытые режимы.
+# eVic_VTC_Mini_V3.01.bin #
+
+# Branch to skip #
+4F7A: 40: 06
+4F7B: 1C: F0
+4F7C: C0: C6
+4F7D: B2: BF
+
+# Skip #
+BED8: FF: 07
+BED9: FF: 28
+BEDA: FF: 00
+BEDB: FF: D3
+BEDC: FF: 00
+BEDD: FF: 20
+BEDE: FF: 00
+BEDF: 7F: 28
+BEE0: 3F: 00
+BEE1: 3F: D1
+BEE2: 1F: 00 ; 01 to skip TEMP NI
+BEE3: 1F: 30
+BEE4: 0F: 01
+BEE5: 0F: 28
+BEE6: 07: 00
+BEE7: 07: D1
+BEE8: 07: 00 ; 01 to skip TEMP TI
+BEE9: 07: 30
+BEEA: 03: 02
+BEEB: 03: 28
+BEEC: 03: 00
+BEED: 03: D1
+BEEE: 03: 00 ; 01 to skip TEMP SS
+BEEF: 03: 30
+BEF0: 03: 03
+BEF1: 03: 28
+BEF2: 03: 00
+BEF3: 03: D1
+BEF4: 07: 00 ; 01 to skip TEMP TCR
+BEF5: 07: 30
+BEF6: 07: 04
+BEF7: 07: 28
+BEF8: 0F: 00
+BEF9: 0F: D1
+BEFA: 0F: 00 ; 01 to skip POWER
+BEFB: 1F: 30
+BEFC: 1F: 05
+BEFD: 3F: 28
+BEFE: 3F: 00
+BEFF: 7F: D1
+BF00: FF: 00 ; 01 to skip BYPASS
+BF01: FF: 30
+BF02: FF: 06
+BF03: FF: 28
+BF04: FF: 00
+BF05: FF: D1
+BF06: FF: 00 ; 01 to skip START
+BF07: FE: 30
+BF08: FC: 70
+BF09: F8: 47
+BF0A: F0: 40
+BF0B: E0: 1C
+BF0C: 80: C0
+BF0D: 00: B2
+BF0E: 00: FF
+BF0F: 00: F7
+BF10: 00: E3
+BF11: 00: FF
+BF12: 03: FF
+BF13: 03: F7
+BF14: 03: E1
+BF15: 03: FF
+BF16: 03: F9
+BF17: 03: F7
+BF18: 03: 32
+BF19: 03: B8

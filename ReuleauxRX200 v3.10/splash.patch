@@ -1,0 +1,57 @@
+<PatchName>Splash screen
+<Eng Description>Adds splash picture (0xA2) to the main screen, 15 s timeout by default.
+<Rus Description>Добавляет изображение-заставку (0xA2) на экран в режиме ожидания. Вывод изображения через 15 секунд по умолчанию.
+# Reuleaux_RX200_V3.10.bin
+
+15D6: 4A: 07
+15D7: 46: F0
+15D8: 20: C3
+15D9: B1: BC
+8F60: 00: 4A
+8F61: 00: 46
+8F62: 00: 08
+8F63: 00: B9
+8F64: 00: F8
+8F65: 00: F7
+8F66: 00: 3E
+8F67: 00: BB
+8F68: 00: 0F ; Splash display time
+8F69: 00: 28
+8F6A: 00: 01
+8F6B: 00: D0
+8F6C: 00: F8
+8F6D: 00: F7
+8F6E: 00: 35
+8F6F: 00: BB
+8F70: 00: 1F
+8F71: 00: B4
+8F72: 00: 06
+8F73: 00: 48
+8F74: 00: 00
+8F75: 00: 78
+8F76: 00: 01
+8F77: 00: 28
+8F78: 00: 06
+8F79: 00: D1
+8F7A: 00: 00 ; Splash X position
+8F7B: 00: 20
+8F7C: 00: 00 ; Splash Y position
+8F7D: 00: 21
+8F7E: 00: A2 ; Splash Charcode
+8F7F: 00: 22
+8F80: 00: FB
+8F81: 00: F7
+8F82: 00: 30
+8F83: 00: FD
+8F84: 00: FB
+8F85: 00: F7
+8F86: 00: 12
+8F87: 00: FF
+8F88: 00: 1F
+8F89: 00: BC
+8F8A: 00: EF
+8F8B: 00: E7
+8F8C: 00: 55
+8F8D: 00: 00
+8F8E: 00: 00
+8F8F: 00: 20

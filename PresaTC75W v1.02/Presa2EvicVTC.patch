@@ -1,0 +1,19 @@
+<PatchName>Presa to Evic VTC mini (check HW version!)
+<Eng Description>NOT use if your evic HardWare is 1.06, 1.08, 1.09, 1.11. Patch Presa firmware for use on Evic VTC mini. 
+<Rus Description> НЕ использовать, если у вас железо Эвика 1.06, 1.08, 1.09, 1.11. Патчит прошивку Пресы для использования в Эвике мини.
+
+# Presa_TC75W_V1.02.bin #
+#_Not_ use if your Evic HW is 1.06, 1.08, 1.09, 1.11 
+
+# change FW "brand" W007 to E052
+19B4: 57: 45 
+19B6: 30: 35
+19B7: 37: 32
+
+#uncomment line with your HW, comment other
+#14FC: 64: 73 # for HW 1.00, 1.02
+14FC: 64: 7D  # for HW 1.01
+#14FC: 64: 6E # for HW 1.03, 1.04, 1.05
+#14FC: 64: 78 # for HW 1.07
+#14FC: 64: 69 # for HW 1.10
+

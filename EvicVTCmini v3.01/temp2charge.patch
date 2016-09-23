@@ -1,0 +1,9 @@
+<PatchName>Show Charge screen instead of Temp
+<Eng Description>Show Charge screen instead of Temp
+<Rus Description>По кликам вызова показаний температуры показывается экран с заставкой заряда мода.
+# eVic_VTC_Mini_V3.01.bin #
+# temp2charge.patch #
+
+102E: 2E: EA
+102F: FF: FD
+

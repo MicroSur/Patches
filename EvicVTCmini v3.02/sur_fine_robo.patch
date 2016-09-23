@@ -1,0 +1,219 @@
+<PatchName>Mass screen alignment for Sur_Fine_Robo.bin
+<Eng Description>Alignment of labels and numbers on the screen. Need to change some glyph in editor. Used for Sur_Fine_Robo firmware.
+<Rus Description>Выравнивание надписей и цифр на экране. Требует редактирования некоторых шрифтов. Патч создан для выравнивания прошивки Sur_Fine_Robo.
+# eVic_VTC_Mini_V3.02.bin #Sur
+
+69DC: 0D: 0D #Y 2#.# POWER
+69DE: 05: 0B #X
+6A08: 00: 03 #X 4###.# 3##.# 
+69FC: 12: 12 #Y 4###.#
+6A06: 0D: 0D #Y 3##.#
+
+6A74: 0D: 0D #Y 2#.# BYPASS
+6A76: 05: 0B #X
+6AA0: 00: 03 #X 4###.# 3##.# 
+6A94: 12: 12 #Y 4###.#
+6A9E: 0D: 0D #Y 3##.#
+
+6946: 36: 37 # PWR_Y
+7874: 36: 37
+###_Y = 34 
+6960: 1B: 18 ###_X
+7898: 1B: 18
+69A8: 1B: 18
+6B0E: 1B: 18
+78CA: 1B: 18
+6996: 19: 18 #1B
+69BE: 19: 18 # !
+78E2: 19: 18
+78F4: 19: 18
+
+#6966: 82: 82 #W
+6968: 36: 37 #W_Y
+696A: 30: 36 #W_X
+
+#69B2: 82: 82 #W
+69B4: 36: 37 #W_Y
+69B6: 35: 36 #W_X
+
+#69C8: 82: 82 #W
+69CA: 36: 37  #W_Y
+69CC: 08: 36  #(was X=Y) W_X
+69CD: 46: 20  #Movs 
+
+#6A0E: 82: 82 #W POWER Bypass
+6A10: 1A: 19 #W_Y
+#6A12: 36: 36 #W_X
+#6AA6: 82: 82 #W POWER Bypass
+6AA8: 1A: 19 #W_Y
+#6AAA: 36: 36 #W_X
+
+6A14: FE: 00 # No print W in POWER Bypass
+6A15: F7: BF
+6A16: D0: 00
+6A17: FA: BF
+6AAC: FE: 00
+6AAD: F7: BF
+6AAE: 84: 00
+6AAF: FA: BF
+
+
+#7094: 82: 82 #W
+#7096: 4A: 4A #W_Y
+70AC: 36: 36 #W_X
+
+#70A8: 82: 82 #W
+#70AA: 4C: 4C #W_Y
+
+#7112: 82: 82 #W
+#7114: 1D: 1D #W_Y
+7116: 37: 36 #W_X
+
+#71CE: 82: 82 #W
+#71D0: 1D: 1D #W_Y
+71D2: 34: 36 #W_X
+
+#71E6: 82: 82 #W
+#71E8: 1D: 1D #W_Y
+71EA: 37: 36 #W_X
+
+#789E: 82: 82 #W
+78A0: 36: 37 #W_Y
+78A2: 30: 36 #W_X
+
+#78D0: 82: 82 #W
+78D2: 36: 37 #W_Y
+78D4: 35: 36 #W_X
+
+#78FA: 82: 82 #W
+78FC: 36: 37 #W_Y
+78FE: 08: 36 #(was X=Y) W_X
+78FF: 46: 20 #Movs 
+
+#7A28: 82: 82 #W
+#7A2A: 4A: 4A #W_Y
+7A40: 36: 36 #W_X
+
+#7A3C: 82: 82 #W
+#7A3E: 4C: 4C #W_Y
+7A40: 36: 36 #W_X
+
+#9C
+
+#6418: 9C: 9C #W
+#641A: 36: 36 #W_Y
+#641C: 34: 34 #W_X
+
+#6480: 9C: 9C #W
+#6482: 16: 16 #W_Y
+#6484: 34: 34 #W_X
+
+#657C: 9C: 9C #W
+#657E: 16: 16 #W_Y
+#6580: 34: 34 #W_X
+
+#6F26: 9C: 9C #W SMART
+6F2C: 72: 73 #W_Y
+#6F2E: 2A: 2A #W_X
+
+#76DE: 9C: 9C #W
+#76E0: 36: 36 #W_Y
+#76E2: 34: 34 #W_X
+
+#A3
+#63FA: A3: A3 #W
+#63FC: 2E: 2E #W_Y
+#63FE: 20: 20 #W_X
+
+#642E: A3: A3 #W
+#6430: 2E: 2E #W_Y
+#652A: 2A: 2A #W_X
+
+#6498: A3: A3 #W
+#649A: 0E: 0E #W_Y
+#649C: 2A: 2E #W_X
+
+#6594: A3: A3 #W
+#64F8: 0E: 0E #W_Y
+#64FA: 2A: 2E #W_X
+
+#69E4: A3: A3 #W POWER 
+69E6: 12: 14 #W_Y
+#69E8: 2D: 2D #W_X
+
+#6A7C: A3: A3 #W POWER 
+6A7E: 12: 14 #W_Y
+#6A80: 2D: 2D #W_X
+
+#7076: A3: A3 #W
+#7078: 44: 44 #W_Y
+#707A: 2A: 2A #W_X
+
+#70E4: A3: A3 #W
+#70E6: 15: 15 #W_Y
+#70E8: 2A: 2A #W_X
+
+#7168: A3: A3 #W
+#716A: 15: 15 #W_Y
+#716C: 2A: 2A #W_X
+
+#76C0: A3: A3 #W
+#76C2: 2E: 2E #W_Y
+#76C4: 20: 20 #W_X
+
+#76F4: A3: A3 #W
+#76F6: 2E: 2E #W_Y
+#76F8: 2A: 2A #W_X
+
+#7A08: A3: A3 #W
+#7A0A: 44: 44 #W_Y
+#7A0C: 2A: 2A #W_X
+
+
+
+6A4A: 36: 37 # VOLT_Y
+6AF8: 36: 37
+6B0E: 1B: 18 ###_X
+7898: 1B: 18 ###_X
+6B14: 81: 9B #V
+6B18: 39: 37 #V_X
+6B16: 36: 37 #V_Y
+
+6D70: 48: 4A # COIL_Y
+6DB2: 1B: 18 ###_X
+#6E9C: 5A: 5A ###_Y
+6DC6: 1B: 18 ###_X
+#6DCC: AA: AA #Ohm
+6DD0: 38: 37 #Ohm_X
+6DCE: 49: 4A #Ohm_Y
+#6E12: AD: AD #Lock
+6E14: 49: 4A #Lock_Y
+6E16: 38: 37 #Lock_X
+
+6E4E: 5B: 5D # AMP_Y
+#6E68: 5A: 5A ###_Y
+6E6C: 1B: 18 ###_X
+6E74: 1B: 18 ###_X
+#6E7E: 86: 86 #A
+6E80: 5C: 5D #A_Y
+6E82: 38: 37 #A_X
+
+#? 6732: 64: 64 # PUFF_Y
+6E8C: 5B: 5D
+72A4: 5C: 5D
+6E9E: 18: 18 ###_X
+72B6: 20: 18
+72B4: 5C: 5A ###_Y
+6E9C: 5A: 5A 
+
+#6678: 64 ? # TIME_Y
+6EA8: 5B: 5D
+#6EC2: 5A: 5A ###_Y
+6EC4: 18: 18 ###_X
+#72D0: 68 ? #TIME_Y
+72EC: 20 19 ###_X
+#72EA: 68: ? ###_Y
+
+6B78: 17: 18 #MIN_X
+#6B4C: 61: 61 #MIN_Y
+

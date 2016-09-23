@@ -1,0 +1,11 @@
+<PatchName>Shorter timeout Fire+Buttons when Off
+<Eng Description>Shorter timeout (2.5sec) waiting for TCR-Set and Buttery volts in Off mode.
+<Rus Description>Время ожидания настроек кастомного TCR и показа заряда акка сокращено до 2.5 сек.
+# eVic_VTC_Mini_V3.02.bin #Sur
+
+4618: FA: 80 
+
+#can swap +- buttons in this case
+#461A: 06: 06 #fire & button-
+#461E: 05: 05 #fire & button+
+

@@ -1,0 +1,11 @@
+<PatchName>80 Watt
+<Eng Description>Set maximum power to 80 Watt.
+<Rus Description>Позволит установить максимум мощности в 80 Ватт.
+# eVic_VTwo_Mini_V4.02.bin #Sur
+
+#22D6: 40: 40
+#22D7: F2: F2
+# 20 -> 80, E8 -> 100
+22D8: EE: 20 ;@PARAM@1@1@1@0@32=80W / 232=100W@
+22D9: 21: 31
+

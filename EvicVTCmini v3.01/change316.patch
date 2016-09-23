@@ -1,0 +1,12 @@
+<PatchName>Change 316 label 
+<Eng Description>Change 316 label to any 3 chars in TEMP SS mode line.
+<Rus Description>ћен€йте номер "316" в строке Temp SS на 3 любых символа.
+# eVic_VTC_Mini_V3.01.bin #
+
+6524: 04: A7 ; 
+652E: 02: A7 ; 
+6538: 07: A7 ; 
+7384: 04: A7
+738E: 02: A7
+7398: 07: A7
+

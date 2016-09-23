@@ -1,0 +1,7 @@
+<PatchName>Realtime COIL in Standby
+<Eng Description>Display resistance in realtime.
+<Rus Description>Отображение реального сопротивления по нажатию на любую клавишу / по обновлению экрана.
+
+# Presa_TC75W_V3.00.bin #
+# Realtime resistance on
+6455: D4: E7

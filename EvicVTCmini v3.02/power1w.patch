@@ -1,0 +1,16 @@
+<PatchName>Power scroll 1W
+<Eng Description>Increase/decrease power with 1 Watt steps.
+<Rus Description>Регулировка мощности с шагом 1 Ватт.
+# eVic_VTC_Mini_V3.02.bin #
+
+## 1W
+3D68: 69: 00
+3E32: 69: 00
+3FAC: 69: 00
+4116: 69: 00
+
+## 0.5W
+#3DA9: 1C: 1D ; incr power_tc
+#3EA3: 1C: 1D ; incr power
+#3FDF: 1E: 1F ; decr power_tc
+#414D: 1E: 1F ; decr power

@@ -1,0 +1,22 @@
+﻿<PatchName>Power scroll 1W
+
+<Eng Description>Increase/decrease power with 1 Watt steps.
+
+<Rus Description>Регулировка мощности с шагом 1 Ватт.
+
+#Reuleaux_RX200S_V4.13@Sur
+
+
+## 1W
+
+40B2: 69: 00
+
+41C6: 69: 00
+
+42DC: 69: 00
+
+43EC: 69: 00
+
+44B8: 69: 00
+
+4616: 69: 00

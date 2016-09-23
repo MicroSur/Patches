@@ -1,0 +1,24 @@
+<PatchName>Charge screen mode with empty picture 64x128
+<Eng Description>Show ownerdraw picture (E3 code) on the charge screen. Increases firmware.
+<Rus Description>Расширяет прошивку, показывает на экране зарядки картинку 64x128 (код E3, картинку добавить в редакторе, там же можно будет уменьшить её высоту до нужного).
+
+# eVic_VTC_Mini_V3.02.bin #
+
+5FB2: 1A: E3 ; change bat rectangle to ownerdraw pic
+5FB4: 73: 00 ; Y
+5FB6: 08: 00 ; X
+
+# Pointers to logos (charcode E3)
+CA48: FD: D0
+CA49: C4: CE
+B198: 4E: D2
+B199: AC: D2
+
+# Add logo 64x128
+CED0: 00: 40
+CED1: 00: 80
+D2D1: 00: 00 ; logo 1 end
+
+D2D2: 00: 40
+D2D3: 00: 80
+D6D3: 00: 00 ; logo 2 end

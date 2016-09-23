@@ -1,0 +1,7 @@
+<PatchName>Fast Menu Blink
+<Eng Description>Set blink frequency to 2 Hz.
+<Rus Description>Увеличивает частоту мигания активированного меню.
+
+# Presa_TC75W_V3.00.bin #
+# Set blink frequency to 2 Hz
+70BE: 32: 19

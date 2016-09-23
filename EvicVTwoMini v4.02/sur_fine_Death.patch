@@ -1,0 +1,139 @@
+<PatchName>Mass screen alignment for Sur_Fine_DeathClock.bin
+<Eng Description>Alignment of labels and numbers on the screen. Install patches, reload firmware in editor, install resource pack. Used for Sur_Fine_DeathClock.bin firmware.
+<Rus Description>Патч создан для выравнивания надписей и цифр на экране в прошивке Sur_Fine_DeathClock. Установите патчи, перегрузите прошивку в редакторе, затем установите наборы шрифтов. 
+# eVic_VTwo_Mini_V4.02.bin #Sur
+
+7CE4: 0D: 0D #Y 2#.# POWER
+7CE6: 05: 0B #X
+7D0E: 00: 03 #X 4###.# 3##.# 
+7D02: 12: 12 #Y 4###.#
+7D0C: 0D: 0D #Y 3##.#
+
+7D7C: 0D: 0D #Y 2#.# BYPASS
+7D7E: 05: 0B #X
+7DA6: 00: 03 #X 4###.# 3##.# 
+7D9A: 12: 12 #Y 4###.#
+7DA4: 0D: 0D #Y 3##.#
+
+7DE0: OD: 0D #Y volt digits when bypass fired
+7DE4: 00: 03 #X
+
+#Celsius Farenheit chars
+#7AE0: E0: E0 #C
+#7AE4: 30: 30 # x_shared
+7AE2: 14: 15 # y_shared
+#8BAC: 30: 30 # x_shared
+8BAA: 14: 15 # y_shared
+#7B32: E1: E1 #F
+
+#---------
+7C50: 36: 38 # PWR_Y
+8BB4: 36: 38
+###_Y = 34 
+7C6A: 1B: 18 ###_X
+8BD8: 1B: 18
+7CB2: 1B: 18
+7E16: 1B: 18
+7CA0: 19: 18 #1B
+7CC8: 19: 18 # !
+8C22: 19: 18
+8C34: 19: 18
+8C0A: 1B: 18
+
+7C72: 36: 37 #W_Y
+7C74: 30: 37 #W_X
+
+7CBE: 36: 37 #W_Y
+7CC0: 35: 37 #W_X
+
+7CD4: 36: 37  #W_Y
+7CD6: 08: 37  #(was X=Y) W_X
+7CD7: 46: 20  #Movs 
+
+7D16: 1A: 1C #W_Y
+7D1A: FE: 00 # No print W here
+7D1B: F7: BF
+7D1C: 09: 00
+7D1D: FC: BF
+
+#W BYPASS
+7DAE: 1A: 1C #W_Y
+7DB2: FE: 00 # No print W here
+7DB3: F7: BF
+7DB4: BD: 00
+7DB5: FB: BF
+
+8BE0: 36: 37 #W_Y
+8BE2: 30: 37 #W_X
+
+8C12: 36: 37 #W_Y
+8C14: 35: 37 #W_X
+
+8C3C: 36: 37 #W_Y
+8C3E: 08: 37 #(was X=Y) W_X
+8C3F: 46: 20 #Movs
+
+861C: 72: 73 #W_Y
+7CEE: 12: 14 #W_Y
+
+#W BYPASS
+7D86: 12: 14 #W_Y
+
+7D52: 36: 38 # VOLT_Y
+7E00: 36: 38
+7E16: 1B: 18 ###_X
+7E1C: 97: B1 #V CHAR
+7E20: 39: 38 #V_X
+7E1E: 36: 37 #V_Y
+8BD8: 1B: 18 ###_X
+
+83E2: 5B: 5E #COIL2_Y
+8400: 5C: 5D #Ohm_Y
+8402: 38: 37 #Ohm_X
+83F8: 1B: 18 ###_X
+
+8374: 48: 4B #PWR2_Y
+83BC: 1B: 18 ###_X
+838E: 1B: 18 ###_X
+83DA: 19: 18 ###_X
+842C: 19: 18 ###_X
+8396: 49: 4A #W_Y
+83C8: 49: 4A #W_Y
+8438: 49: 4A #W_Y
+83CA: 35: 37 #W_X
+8398: 30: 37 #W_X
+843A: 36: 37 #W_X
+
+845E: 48: 4B # COIL_Y
+84A2: 1B: 18 ###_X
+84B4: 1B: 18 ###_X
+84BC: 49: 4A #Ohm_Y
+8504: 49: 4A #Lock_Y
+8506: 38: 37 #Lock_X
+
+853C: 5B: 5E # AMP_Y
+855A: 1B: 18 ###_X
+8562: 1B: 18 ###_X
+856E: 5C: 5D #A_Y
+8570: 38: 38 #A_X
+
+#PUFF
+857A: 5B: 5E
+858C: 18: 18 ###_X
+#858A: 5A: 5A 
+
+#TIME
+8596: 5B: 5E
+85B2: 18: 18 ###_X
+
+7E7E: 17: 18 #MIN_X
+
+#bigclock
+#86D4: FA: 00 #no sec hand
+#86D5: F7: BF
+#86D6: 69: 00
+#86D7: FC: BF
+86AE: 03: 02 ; center pin radius
+#Smallclock
+82F2: 03: 02 ; center pin radius
+

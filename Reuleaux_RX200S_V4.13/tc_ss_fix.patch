@@ -1,0 +1,8 @@
+<PatchName>TC SS Fix
+<Eng Description>Greatly helps stop rx23 from thinking ss is kanthal and switching to vw mode. changes kanthal check max possible wattage from 40 watts to whatever your set wattage is (up to 200.0 watts).
+<Eng Description>note: make sure your wattage and temp are both set high enough for coil to get hot of course.
+<Rus Description>Исправляет ошибочное перекидывание в режим POWER из режима Temp SS при использовании композитных спиралей, например Clapton / Fused Clapton с SS в сердечнике.
+#RX200S_4.13#SurPort@RenegadeTitan
+
+34D6: C8: FA
+34D7: 71: 61

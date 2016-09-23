@@ -1,0 +1,14 @@
+<PatchName>Fire button clicks changing
+<Eng Description>Changing the number of clicks on the Fire button to call the various events.
+<Rus Description>Изменение количества нажатий на кнопку Пуск для вызова соответствующих событий.
+#_RX23_4.02,4.12@Sur
+
+49B2: 05: 03 ; on-off clicks 5 -> 3
+49BC: 03: 02 ; menu	     3 -> 2
+49C4: 0A: 04 ; show temp    10 -> 4
+49C8: 14: 05 ; show fw ver  20 -> 5
+
+15E2: 05: 04 ; Battery screen instead of FW Version screen
+15E3: F0: F0
+15E4: 47: 61
+15E5: FC: FF

@@ -1,0 +1,10 @@
+<PatchName>Power scroll 1W
+<Eng Description>Increase/decrease power with 1 Watt steps.
+<Rus Description>Регулировка мощности с шагом 1 Ватт.
+#iStick_Pico_V1.02#SurPort
+
+## 1W
+3CE4: 69: 00
+3D28: 69: 00
+3F08: 69: 00
+3F5A: 69: 00

@@ -1,0 +1,10 @@
+<PatchName>Power scroll 1W
+<Eng Description>Increase/decrease power with 1 Watt steps.
+<Rus Description>Регулировка мощности с шагом 1 Ватт.
+# eVic_VTwo_Mini_V4.02.bin #SurPort
+
+## 1W
+51BE: 69: 00
+52A4: 69: 00
+5452: 69: 00
+5606: 69: 00

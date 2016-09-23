@@ -1,0 +1,9 @@
+<PatchName>Sleep timeout 15s
+<Eng Description>Set dim timeout from 30 to 15s.
+<Rus Description>Установка времени гашения экрана 15сек вместо 30-ти.
+# eVic_VTC_Mini_V3.01.bin #
+
+1188: 1E: 0F #
+403E: 1E: 0F
+5680: 1E: 0F
+7CC6: 1E: 0F

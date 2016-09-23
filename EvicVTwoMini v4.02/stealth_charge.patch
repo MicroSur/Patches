@@ -1,0 +1,50 @@
+<PatchName>Stealth mode at charge
+<Eng Description>Blanc screen at battery charge when Stealth mode activated (Save screen from damage).
+<Rus Description>Отключает экран при зарядке (предохраняет от выгорания экрана), если активен "скрытный" режим.
+# eVic_VTWo_Mini_V4.02.bin #
+
+# Branch to Stealth Mode detection
+782A: 00: 07
+782B: F0: F0
+782C: 03: 13
+782D: B8: BE
+
+# Stealth Mode detection
+F454: 00: 03
+F455: FF: 48
+F456: FF: 90
+F457: FF: F8
+F458: 07: 25
+F459: 07: 00
+F45A: 07: 08
+F45B: FF: B1
+F45C: FF: F8 ; Stealth On
+F45D: FF: F7
+F45E: 00: E7
+F45F: 00: B9
+F460: 00: F8 ; Stealth Off, show
+F461: 9F: F7
+F462: 9F: E8
+F463: 9F: B9
+
+F464: 9C: B0 #data
+F465: 9C: 02
+F466: 9C: 00
+F467: 9F: 20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

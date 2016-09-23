@@ -1,0 +1,191 @@
+<PatchName>3-d line with battery voltage and real resistance
+<Eng Description>Adds battery voltage, real resistance #.### in last 3rd line.
+<Rus Description>¬ 3-ю строку добавл€ютс€ показани€ напр€жени€ батареи, реальное сопротивление спирали до третьего знака.
+<Rus Description>»з-за особенностей измерени€, сопротивление может мен€тс€ само собой в сотых и тыс€чных дол€х ќма. 
+# eVic_VTwo_Mini_V4.02.bin #SurPort
+
+# Max item number
+263C: 03: 05
+523A: 03: 05
+# Branch to new case set for 3rd line
+8530: 01: 07
+8531: 28: F0
+8532: 21: 08
+8533: D0: B8
+
+# New case set
+F544: 00: 01 ;PUFF
+F545: 00: 28
+F546: 00: 39
+F547: 00: F4
+F548: 00: 17
+F549: 00: A8
+F54A: 00: 02 ;TIME
+F54B: 00: 28
+F54C: 00: 39
+F54D: 00: F4
+F54E: 00: 22
+F54F: 00: A8
+F550: 00: 03 ;BATT
+F551: 00: 28
+F552: 00: 00
+F553: 00: F0
+F554: 00: 1B
+F555: 00: 80
+F556: 00: 04 ;RES
+F557: 00: 28
+F558: 00: 00
+F559: 00: F0
+F55A: 00: 02
+F55B: 00: 80 
+F55C: 00: F9 ;Ret loc_85B8
+F55D: 00: F7
+F55E: 00: 2C
+F55F: 00: B8
+
+#RES
+F560: 00: 18
+F561: 00: 48
+F562: 00: 5E ; RES pos Y
+F563: 00: 22
+F564: 00: 00 ; X
+F565: 00: 21
+F566: 00: 04
+F567: 00: 26
+
+F568: 00: F7
+F569: 00: F7
+F56A: 00: 3D
+F56B: 00: F9
+
+F56C: 00: 12
+F56D: 00: 48
+F56E: 00: CD
+F56F: 00: E9
+F570: 00: 00
+F571: 00: 46
+
+F572: 00: 03 ; #.###
+F573: 00: 23
+F574: 00: 02
+F575: 00: 88
+F576: 00: 5A ; # pos Y
+F577: 00: 21
+F578: 00: 10 ; # pos X
+F579: 00: 20
+
+F57A: 00: F7
+F57B: 00: F7
+F57C: 00: 5D
+F57D: 00: F8
+
+F57E: 00: C0 ; Ohm charcode
+F57F: 00: 22
+F580: 00: 5D ; pos Y
+F581: 00: 21
+F582: 00: 38 ; pos X
+F583: 00: 20
+
+F584: 00: F6
+F585: 00: F7
+F586: 00: D4
+F587: 00: FF
+
+F588: 00: F9 ;Ret
+F589: 00: F7
+F58A: 00: 16
+F58B: 00: B8
+
+#BATT
+F58C: 00: 0C
+F58D: 00: 48
+F58E: 00: 5E ; BATT pos Y
+F58F: 00: 22
+F590: 00: 00 ; BATT pos X
+F591: 00: 21
+F592: 00: 03
+F593: 00: 26
+
+F594: 00: F7
+F595: 00: F7
+F596: 00: 27
+F597: 00: F9
+
+F598: 00: 08
+F599: 00: 48
+F59A: 00: CD
+F59B: 00: E9
+F59C: 00: 00
+F59D: 00: 46
+F59E: 00: 02
+F59F: 00: 23
+F5A0: 00: 02 ; 82 ; 02
+F5A1: 00: 88 ; 8C ; 88
+F5A2: 00: 5A ; #voltage pos Y
+F5A3: 00: 21
+F5A4: 00: 18 ; #voltage pos X
+F5A5: 00: 20
+
+F5A6: 00: F7
+F5A7: 00: F7
+F5A8: 00: 47
+F5A9: 00: F8
+
+F5AA: 00: B1 ; V charcode
+F5AB: 00: 22
+F5AC: 00: 5D ; V pos Y
+F5AD: 00: 21
+F5AE: 00: 37 ; V pos X
+F5AF: 00: 20
+
+F5B0: 00: F6
+F5B1: 00: F7
+F5B2: 00: BE
+F5B3: 00: FF
+
+F5B4: 00: F9 ;Ret
+F5B5: 00: F7
+F5B6: 00: 00
+F5B7: 00: B8
+
+F5B8: 00: B0 ;data of Res
+F5B9: 00: 00
+F5BA: 00: 00
+F5BB: 00: 20
+
+0A74: 10: 00  # for RT battery
+0A75: D4: BF
+
+F5BC: 00: 60 ;data of batt , 4D - vout , 3C batt too (with F5A0: 00: 82 ; 02 / F5A1: 00: 8C ; 88)
+F5BD: 00: 00
+F5BE: 00: 00
+F5BF: 00: 20
+
+F5C0: 00: C8
+F5C1: 00: F5
+F5C2: 00: 00
+F5C3: 00: 00
+F5C4: 00: D2
+F5C5: 00: F5
+F5C6: 00: 00
+F5C7: 00: 00
+
+F5C8: 00: 69 ;word BATT
+F5C9: 00: 00
+F5CA: 00: 68
+F5CB: 00: 00
+F5CC: 00: 7B
+F5CD: 00: 00
+F5CE: 00: 7B
+F5CF: 00: 00
+F5D0: 00: 00
+F5D1: 00: 00
+
+F5D2: 00: 79 ;word RS
+F5D3: 00: 00
+F5D4: 00: 7A
+F5D5: 00: 00
+F5D6: 00: 00 ;for more 1
+F5D7: 00: 00
+F5D8: 00: 00
+F5D9: 00: 00

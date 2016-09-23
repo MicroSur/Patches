@@ -1,0 +1,91 @@
+<PatchName>Preheat in VW mode
+<Eng Description>Preheat in VW mode. Check and change patch for setup.
+<Rus Description>Предварительный разогрев спирали дополнительной мощностью.
+<Rus Description>Настройки времени и дополнительной мощности - в тексте патча.
+# eVic_VTwo_Mini_V4.02.bin #MicroSur
+
+#Set time of preahit*10. Default 0.5sec (10 -> 0A hex). Время прехита*10 сек.
+F29C: 00: 05 @PARAM@1@1@1@1@Preheat times (sec)@Время действия преднагрева (сек)
+F2BA: 00: 05 @PARAM@1
+#Set power to add*10. Default 10Watt (100 -> 64 hex). Добавочная мощность*10 Ватт. 
+F2AA: 00: 64 @PARAM@2@1@1@1@Preheat power adds (W)@Добавочная мощность преднагрева (Вт)
+F2C0: 00: 64 @PARAM@2
+
+#screen delay after Fire 1>3 sec.
+1C44: 01: 03 @PARAM@3@1@1@0@Fire screen delay after puff (sec)@Задержка смены экрана после затяжки(сек)
+#code
+3EB8: 00: 0B #to cut from TweakTargetVoltsVW
+3EB9: F0: F0
+3EBA: CC: FC
+3EBB: F9: B9
+
+7A52: BB: 07 #to cut from ShowMainView
+7A53: F8: F0
+7A54: 10: 1E
+7A55: 20: BC
+
+#cut from ShowMainView
+F292: 00: BB
+F293: 00: F8
+F294: 00: 10
+F295: 00: 20
+F296: 00: 06
+F297: 00: 49
+F298: 00: 09
+F299: 00: 8C
+F29A: 00: B1
+F29B: 00: F1
+
+F29D: 00: 0F
+F29E: 00: 05
+F29F: 00: D8
+F2A0: 00: B9
+F2A1: 00: F8
+F2A2: 00: 00
+F2A3: 00: 30
+F2A4: 00: DB
+F2A5: 00: 05
+F2A6: 00: 01
+F2A7: 00: D5
+F2A8: 00: 02
+F2A9: 00: F1
+
+F2AB: 00: 02
+F2AC: 00: F8
+F2AD: 00: F7
+F2AE: 00: D3
+F2AF: 00: BB
+F2B0: 00: 3C
+F2B1: 00: 00
+F2B2: 00: 00
+F2B3: 00: 20
+
+#cut from TweakTargetVoltsVW
+F2B4: 00: 05
+F2B5: 00: 49
+F2B6: 00: 09
+F2B7: 00: 8C
+F2B8: 00: B1
+F2B9: 00: F1
+
+F2BB: 00: 0F
+F2BC: 00: 01
+F2BD: 00: D8
+F2BE: 00: 00
+F2BF: 00: F1
+
+F2C1: 00: 00
+F2C2: 00: F4
+F2C3: 00: F7
+F2C4: 00: C7
+F2C5: 00: FF
+F2C6: 00: F4
+F2C7: 00: F7
+F2C8: 00: F9
+F2C9: 00: BD
+F2CA: 00: 00
+F2CB: 00: 00
+F2CC: 00: 3C
+F2CD: 00: 00
+F2CE: 00: 00
+F2CF: 00: 20

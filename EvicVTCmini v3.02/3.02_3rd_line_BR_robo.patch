@@ -1,0 +1,199 @@
+<PatchName>3-d line with battery voltage and real resistance (Robo)
+<Eng Description>Adds battery voltage, real resistance #.### in last 3rd line.
+<Rus Description>В 3-ю строку добавляются показания напряжения батареи, реальное сопротивление спирали до третьего знака.
+# eVic_VTC_Mini_V3.02.bin #
+
+# Max item number
+1946: 03: 05 ; check while loading from dataflash
+3DCC: 03: 05 ; menu subroutine
+
+# Branch to new case set for 3rd line
+6E42: 01: 05    
+6E43: 28: F0
+6E44: 21: 7D
+6E45: D0: BB
+
+# Battery voltage
+C500: 00: 0B
+C501: 00: 48
+C502: 00: 5D ; BATT pos Y
+C503: 00: 22
+C504: 00: 00 ; BATT pos X
+C505: 00: 21
+C506: 00: 03
+C507: 00: 27
+
+C508: 00: F8
+C509: 00: F7
+C50A: 00: A2
+C50B: 00: FE
+
+C50C: 00: 07
+C50D: 00: 48
+C50E: 00: CD
+C50F: 00: E9
+C510: 00: 00
+C511: 00: 47
+C512: 00: 02
+C513: 00: 23
+C514: 00: 02
+C515: 00: 88
+C516: 00: 5A ; voltage pos Y
+C517: 00: 21
+C518: 00: 18 ; voltage pos X
+C519: 00: 20
+
+C51A: 00: F8
+C51B: 00: F7
+C51C: 00: D1
+C51D: 00: FD
+
+C51E: 00: 81 ;9B ; V charcode
+C51F: 00: 22
+C520: 00: 5D ; V pos Y
+C521: 00: 21
+C522: 00: 38 ;37 ; V pos X
+C523: 00: 20
+
+C524: 00: F8
+C525: 00: F7
+C526: 00: 48
+C527: 00: FD
+
+C528: 00: FA
+C529: 00: F7
+C52A: 00: CF
+C52B: 00: BC
+
+06C4: 10: 00 # for RT battery
+06C5: D4: BF 
+
+C52C: 00: 58 ; data # batt
+C52D: 00: 00
+C52E: 00: 00
+C52F: 00: 20
+
+C530: 00: 38 ; >
+C531: 00: C5
+
+C532: 00: 00
+C533: 00: 00
+C538: 00: D2 ; D2
+C539: 00: 00  
+C53A: 00: 00 
+#C538: 00: 53 ; B
+#C539: 00: 52 ; A
+#C53A: 00: 65 ; T
+#C53B: 00: 65 ; T
+#C53C: 00: 00 ; line end
+#C53F: 00: 00
+
+# New case set
+C540: 00: 01 ; case 1: PUFF 
+C541: 00: 28
+
+C542: 00: 3A
+C543: 00: F4
+C544: 00: A2
+C545: 00: AC
+
+C546: 00: 02 ; case 2: TIME 
+C547: 00: 28
+
+C548: 00: 3A
+C549: 00: F4
+C54A: 00: AD
+C54B: 00: AC
+
+C54C: 00: 03 ; case 3: BATT 
+C54D: 00: 28
+
+C54E: 00: 3F
+C54F: 00: F4
+C550: 00: D7
+C551: 00: AF
+
+C552: 00: 04 ; case 4: TEMP 
+C553: 00: 28
+
+C554: 00: 00
+C555: 00: F0
+C556: 00: 0C
+C557: 00: 80
+
+C558: 00: FA
+C559: 00: F7
+C55A: 00: B7
+C55B: 00: BC
+    
+# real res
+C570: 00: 0B
+C571: 00: 48
+C572: 00: 5D ; RES pos Y
+C573: 00: 22
+C574: 00: 00 ; RES pos X
+C575: 00: 21
+C576: 00: 04 
+C577: 00: 27
+
+C578: 00: F8
+C579: 00: F7
+C57A: 00: 6A
+C57B: 00: FE
+
+C57C: 00: 07
+C57D: 00: 48
+C57E: 00: CD
+C57F: 00: E9
+C580: 00: 00
+C581: 00: 47
+C582: 00: 03 ; #.###
+C583: 00: 23
+C584: 00: 02
+C585: 00: 88
+C586: 00: 5A ; ## pos Y
+C587: 00: 21
+C588: 00: 10 ; ## pos X 
+C589: 00: 20
+
+C58A: 00: F8
+C58B: 00: F7
+C58C: 00: 99
+C58D: 00: FD
+
+C58E: 00: AA ; Ohm charcode
+C58F: 00: 22
+C590: 00: 5D ; pos Y
+C591: 00: 21
+C592: 00: 37 ; pos X
+C593: 00: 20
+
+C594: 00: F8
+C595: 00: F7
+C596: 00: 10
+C597: 00: FD
+
+C598: 00: FA
+C599: 00: F7
+C59A: 00: 97
+C59B: 00: BC
+
+C59C: 00: A8 ; data A8
+C59D: 00: 00
+C59E: 00: 00
+C59F: 00: 20
+
+C5A0: 00: A8 ; >
+C5A1: 00: C5
+
+C5A2: 00: 00
+C5A3: 00: 00
+#C5A8: 00: 63 ; R
+#C5A9: 00: 64 ; S
+
+C5A8: 00: D3 ; D3
+C5A9: 00: 00 
+
+C5AA: 00: 00 ; 
+C5AB: 00: 00 ; 
+C5AC: 00: 00 ; line end

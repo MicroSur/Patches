@@ -1,0 +1,9 @@
+<PatchName>Set Dim Timeout (15 s)
+<Eng Description>Set screen dim timeout to 15 sec.
+<Rus Description>Изменяет время отключения экрана в режиме ожидания (на 15 с).
+
+# Presa_TC75W_V3.00.bin #
+# Set dim timeout to 15 s #
+116C: 1E: 0F
+3CF8: 1E: 0F
+5360: 1E: 0F

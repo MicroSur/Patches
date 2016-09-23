@@ -1,0 +1,110 @@
+<PatchName>Smooth Scroll speed 3
+<Eng Description>Adjust scrolling speed of power and temperature. 3 speeds, 0,5 W max. increment and decrement.
+<Rus Description>Регулировка скорости прокрутки значений мощности и температуры. 3 скорости, наибольший шаг 0,5 Вт.
+# eVic_VTC_Mini_V3.01.bin #
+
+# Increment PWR in TC #
+#3B78: 69: 69 ; shift to the 3rd gear
+#3B7D: D3: E0 ; disable fast increment
+3B7E: 0A: 05 ; round to 5
+3B91: EB: FB
+3B92: 80: 01
+3B93: 01: F0
+3B94: 4F: 00
+3B95: F6: BF
+3B96: FF: 00
+3B97: 70: BF
+3B99: EA: BF
+3B9A: 41: 00
+3B9B: 00: BF
+3BA4: 0A: 05 ; increment by 5
+
+# Increment POWER #
+#3C44: 69: 69 ; shift to the 3rd gear
+#3C47: D3: E0 ; disable fast increment
+3C4A: 0A: 05 ; round to 5
+3C5B: F0: F3
+3C5C: 00: 03
+3C5D: EB: FB
+3C5E: 80: 00
+3C5F: 03: F0
+3C60: 4F: 00
+3C61: F6: BF
+3C62: FF: 00
+3C63: 70: BF
+3C65: EA: BF
+3C66: 43: 00
+3C67: 00: BF
+3C6C: 0A: 05 ; increment by 5
+
+# Decrement PWR in TC #
+#3DA6: 69: 69 ; shift to the 3rd gear
+#3DA9: D3: E0 ; disable fast decrement
+3DAC: 0A: 05 ; round to 5
+3DBD: F0: F1
+3DBE: 00: 01
+3DBF: EB: FB
+3DC0: 80: 00
+3DC1: 01: F0
+3DC2: 4F: 00
+3DC3: F6: BF
+3DC4: FF: 00
+3DC5: 70: BF
+3DC7: EA: BF
+3DC8: 41: 00
+3DC9: 00: BF
+3DD2: 0A: 05 ; decrement by 5
+
+# Decrement POWER #
+#3F12: 69: 69 ; shift to the 3rd gear
+#3F15: D3: E0 ; disable fast decrement
+3F18: 0A: 05 ; round to 5
+3F29: F0: F3
+3F2A: 00: 03
+3F2B: EB: FB
+3F2C: 80: 00
+3F2D: 03: F0
+3F2E: 4F: 00
+3F2F: F6: BF
+3F30: FF: 00
+3F31: 70: BF
+3F33: EA: BF
+3F34: 43: 00
+3F35: 00: BF
+3F3E: 0A: 05 ; decrement by 5
+
+# Shift to the 2nd gear #
+8E52: 05: 0A ; threshold
+8ED6: 05: 0A ; threshold
+
+# Repeat Delay #
+30CA: 03: 04
+30D4: 03: 04
+
+# Branch to new gearbox #
+30D8: 28: 08
+30D9: 88: F0
+30DA: 69: 84
+30DB: 28: BF
+
+# New Gearbox #
+BFE4: 00: 28
+BFE5: 01: 88
+BFE6: 01: 0A ; 2nd gear threshold
+BFE7: 01: 28
+BFE8: 01: 00
+BFE9: 03: D3
+BFEA: 03: 26
+BFEB: 03: 70
+BFEC: 03: 69 ; 3rd gear threshold
+BFED: 03: 28
+BFEE: 03: 01
+BFEF: 03: D3
+BFF0: 03: F7
+BFF1: 03: F7
+BFF2: 03: 7B
+BFF3: 03: B8
+BFF4: 03: F7
+BFF5: 03: F7
+BFF6: 03: 73
+BFF7: 03: B8

@@ -1,0 +1,168 @@
+<PatchName>3-d line with battery voltage and temp
+<Eng Description>Adds battery voltage, PCB temperature in last 3rd line.
+<Rus Description>В 3-ю строку добавляются показания напряжения батареи и температуры платы на выбор.
+
+# eVic_VTC_Mini_V3.01.bin #
+# Add battery voltage and PCB temperature #
+# Max item number
+18EA: 03: 05
+3BDC: 03: 05
+# Branch to new case set
+6A7C: 01: 05
+6A7D: 28: F0
+6A7E: 21: 10
+6A7F: D0: BB
+# Battery voltage
+C060: 80: 0B
+C061: 00: 48
+C062: 00: 5C
+C063: 00: 22
+C064: 00: 00
+C065: 00: 21
+C066: 00: 03
+C067: 00: 27
+C068: 00: F8
+C069: 00: F7
+C06A: 00: 3A
+C06B: 00: FF
+C06C: 00: 07
+C06D: 00: 48
+C06E: 00: CD
+C06F: C0: E9
+C070: 30: 00
+C071: 08: 47
+C072: 04: 02
+C073: 04: 23
+C074: 04: 02
+C075: 08: 88
+C076: 30: 5A
+C077: 00: 21
+C078: 00: 1B
+C079: 00: 20
+C07A: 00: F8
+C07B: 00: F7
+C07C: 00: 69
+C07D: 00: FE
+C07E: 00: 67
+C07F: 00: 22
+C080: 00: 5C
+C081: 00: 21
+C082: 00: 38
+C083: 00: 20
+
+C084: 00: F8
+C085: 80: F7
+C086: 80: 48
+C087: 80: FE
+
+C088: C0: FA
+C089: C0: F7
+C08A: E0: 3C
+C08B: E0: BD
+C08C: F0: 56
+C08D: F0: 00
+C08E: F8: 00
+C08F: 78: 20
+C090: 1C: 98
+C091: 0C: C0
+C092: 04: 00
+C098: 03: 53
+C099: 07: 52
+C09A: 3F: 65
+C09B: 0F: 65
+C09C: 1F: 00
+C09F: 3F: 00
+# New case set
+C0A0: 3F: 01
+C0A1: 3F: 28
+
+C0A2: 7F: 3A
+C0A3: 7F: F4
+C0A4: FE: 0F
+C0A5: FE: AD
+
+C0A6: FC: 02
+C0A7: FC: 28
+
+C0A8: F8: 3A
+C0A9: F8: F4
+C0AA: F8: 1A
+C0AB: F0: AD
+
+C0AC: F0: 03
+C0AD: C7: 28
+
+C0AE: 18: 3F
+C0AF: 63: F4
+C0B0: 8C: D7
+C0B1: 10: AF
+
+C0B2: 20: 04
+C0B3: 20: 28
+
+C0B4: 11: 00
+C0B5: 8D: F0
+C0B6: 63: 14
+C0B7: 18: 80
+
+C0B8: C7: FA
+C0B9: F0: F7
+C0BA: F0: 24
+C0BB: F8: BD
+
+# PCB temperature
+C0E0: 00: 0B
+C0E1: 00: 48
+C0E2: 00: 5C
+C0E3: 00: 22
+C0E4: 00: 00
+C0E5: 00: 21
+C0E6: 00: 02
+C0E7: 01: 27
+C0E8: 01: F8
+C0E9: 03: F7
+C0EA: 03: FA
+C0EB: 03: FE
+C0EC: 07: 07
+C0ED: 47: 48
+C0EE: E7: CD
+C0EF: E6: E9
+C0F0: FC: 00
+C0F1: F9: 47
+C0F2: F9: 00
+C0F3: F9: 23
+C0F4: F9: 02
+C0F5: FC: 78
+C0F6: FE: 5A
+C0F7: F7: 21
+C0F8: F7: 27
+C0F9: 47: 20
+C0FA: 03: F8
+C0FB: 03: F7
+C0FC: 03: 29
+C0FD: 01: FE
+C0FE: 01: 54
+C0FF: 00: 22
+C100: 00: 5C
+C101: 00: 21
+C102: 00: 38
+C103: 00: 20
+C104: 00: F8
+C105: 00: F7
+C106: 00: 08
+C107: 00: FE
+C108: 00: FA
+C109: 00: F7
+C10A: 00: FC
+C10B: 00: BC
+C10C: 00: 42
+C10D: 00: 00
+C10E: 00: 00
+C10F: 00: 20
+C110: 00: 18
+C111: 00: C1
+C118: 00: 65
+C119: 00: 56
+C11A: 00: 5E
+C11B: 04: 61
+C11C: 18: 00

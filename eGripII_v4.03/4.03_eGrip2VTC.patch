@@ -1,0 +1,22 @@
+﻿<Patch Definition="eGrip II 4.03" Name="eGrip2VTC" Version="1.0" Author="NFirmwareEditor Team">
+  <Description>Converts eGrip II firmware to eVic VTC Mini.
+Edit patch to match with your Hardware Version!
+Преобразование прошивки eGrip II для eVic VTC Mini.
+Отредактируйте патч в соответствии с Hardware Version!</Description>
+  <Data>
+# Shunt Resistance #
+#00002792: 78 - 6E ; 1.03, 1.04, 1.05, 1.06
+00002792: 78 - 7D ; 1.01, 1.08
+#00002792: 78 - 78 ; 1.07, 1.09
+#00002792: 78 - 69 ; 1.10, 1.11
+#00002792: 78 - 73 ; 1.00, 1.02, other
+
+# Display Version #
+#00002799: 70 - 50 ; 1.02, 1.03, 1.06, 1.08, 1.09, 1.11
+00002799: 70 - 70 ; other
+
+# Product Code #
+00002D1E: 38 - 35
+00002D1F: 33 - 32
+</Data>
+</Patch>

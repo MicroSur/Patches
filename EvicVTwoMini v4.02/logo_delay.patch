@@ -1,0 +1,8 @@
+<PatchName>Logo delay
+<Eng Description>Logo 64x40 show timeout.
+<Rus Description>Установка задержки показа логотипа.
+# eVic_VTWo_Mini_V4.02.bin #Sur
+
+#From 3 to 6 sec delay
+1EDC: 03: 07 @PARAM@1@1@1@0@Logo 64x40 show timeout (sec)@Установка задержки показа логотипа (сек)
+5728: 03: 07 @PARAM@1

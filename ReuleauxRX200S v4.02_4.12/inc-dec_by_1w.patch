@@ -1,0 +1,9 @@
+﻿<PatchName>Inc/Dec by 1W
+<Eng Description>Changing power by one watt.
+<Rus Description>Изменение мощности по одному ватту.
+ReuleauxRX200S v4.02_4.12 #lomask@Sur
+
+3F42: 69: 00
+405C: 69: 00
+4198: 69: 00
+4306: 69: 00

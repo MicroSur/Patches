@@ -1,0 +1,10 @@
+<PatchName>100 Watt
+<Eng Description>Set maximum power to 100 Watt.
+<Rus Description>Позволит установить максимум мощности в 100 Ватт.
+# eVic_VTC_Mini_V3.02.bin #Sur
+
+#15EE: 40: 40
+#15EF: F2: F2
+15F0: EE: E8
+15F1: 21: 31
+

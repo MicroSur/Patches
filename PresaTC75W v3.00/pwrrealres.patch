@@ -1,0 +1,8 @@
+<PatchName>Realtime COIL in POWER Mode
+<Eng Description>Display resistance in realtime.
+<Rus Description>Отображение реального сопротивления в режиме VW 
+
+# Presa_TC75W_V3.00.bin # 
+# realtime VW resistance # 
+
+63CE: 42: 3E

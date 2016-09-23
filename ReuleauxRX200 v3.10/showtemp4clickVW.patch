@@ -1,0 +1,7 @@
+<PatchName>Show temp in 4clicks in VW mode.patch
+<Eng Description>Show temp in 4clicks in VW mode
+<Rus Description>Показ температуры по 4 нажатиям в режиме VW
+# Reuleaux_RX200_V3.10.bin
+
+4594: A7: 1F
+45A4: 9F: 17

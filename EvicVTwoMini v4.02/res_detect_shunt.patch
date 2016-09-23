@@ -1,0 +1,8 @@
+<PatchName>Correction of coil Res detection
+<Eng Description>Change the resistance of the measuring shunt for the proper determination of the coil resistance.
+<Rus Description>Изменение сопротивления шунта для более точного измерения сопротивления спирали.
+# eVic_VTwo_Mini_V4.02.bin #Sur
+
+# 73 = default ; 7D -> +0.01 Ohm ; 69 -> -0.01
+22BA: 73: 73 @PARAM@1@1@1@0@115 = default / 125 -> +0.01 Ohm / 105 -> -0.01@
+

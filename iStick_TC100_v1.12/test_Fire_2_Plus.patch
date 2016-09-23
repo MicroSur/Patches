@@ -1,0 +1,14 @@
+<PatchName>test fire 2 button +
+<Eng Description>test fire 2 button +
+<Rus Description>test fire 2 button +
+#iStick_TC100_v1.12#Sur
+
+#in userinput
+419F: B9: B1 # Fire to +button 
+41A3: B1: B9
+
+#in keyrepeat
+31D0: 02: 01 # B+ case Fire event
+31DA: 03: 02 # B- case B+ event (if long press)
+
+

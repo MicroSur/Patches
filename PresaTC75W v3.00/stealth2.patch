@@ -1,0 +1,32 @@
+<PatchName>Stealth on Charge (updated)
+<Eng Description>Extends Stealth Mode to the charge screen.
+<Rus Description>Отключает показ анимации зарядки. Работает при активированном режиме Stealth.
+
+# Presa_TC75W_V3.00.bin #
+# Stealth Mode on charge #
+# Branch to stealth mode detection
+58F0: 00: 05
+58F1: F0: F0
+58F2: 2E: C0
+58F3: B8: BD
+# Stealth mode detection
+B474: 0F: 03
+B475: 00: 48
+B476: 0F: 90
+B477: 01: F8
+B478: 01: 25
+B479: 00: 00
+B47A: 00: 08
+B47B: 03: B1
+B47C: 04: FA
+B47D: 08: F7
+B47E: 04: 3C
+B47F: 03: BA
+B480: 00: FA
+B481: 0F: F7
+B482: 01: 66
+B483: 03: BA
+B484: 0C: 4C
+B485: 00: 02
+B486: 00: 00
+B487: 00: 20

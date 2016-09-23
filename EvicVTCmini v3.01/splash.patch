@@ -1,0 +1,57 @@
+<PatchName>Splash Screen
+<Eng Description>Adds splash picture to the main screen, 8 s timeout by default. Charge Screen Mod and Dim Timeout (15 s) patches are recommended to be installed.
+<Rus Description>Добавляет изображение-заставку 0xE3 на экран в режиме ожидания. Вывод изображения через 8 секунд по умолчанию. Рекомендуется установить патчи Charge Screen Mod с изображением 64x64 или 64x104 и таймаут гашения экрана 15 с.
+# eVic_VTC_Mini_V3.01.bin #
+
+1090: 20: 0A
+1091: 78: F0
+1092: 20: 90
+1093: B1: BF
+BFB4: FF: 20
+BFB5: FF: 78
+BFB6: FF: 08
+BFB7: FF: B9
+BFB8: FF: F5
+BFB9: FF: F7
+BFBA: FF: 71
+BFBB: FF: B8
+BFBC: FF: 08 ; Splash display time
+BFBD: FF: 28
+BFBE: FF: 01
+BFBF: FF: D0
+BFC0: 7F: F5
+BFC1: 7F: F7
+BFC2: 3F: 68
+BFC3: 3F: B8
+BFC4: 1F: 1F
+BFC5: 1F: B4
+BFC6: 0F: 06
+BFC7: 07: 48
+BFC8: 03: 00
+BFC9: 01: 78
+BFCA: 00: 01
+BFCB: 00: 28
+BFCC: 00: 06
+BFCD: 00: D1
+BFCE: 00: 00 ; Splash X position
+BFCF: 00: 20
+BFD0: 00: 00 ; Splash Y position
+BFD1: 00: 21
+BFD2: 00: E3 ; Splash Charcode
+BFD3: 00: 22
+BFD4: 00: F8
+BFD5: 00: F7
+BFD6: 00: A0
+BFD7: 00: FE
+BFD8: 00: F8
+BFD9: 00: F7
+BFDA: 00: BA
+BFDB: 00: FF
+BFDC: 00: 1F
+BFDD: 00: BC
+BFDE: 00: EF
+BFDF: 00: E7
+BFE0: 00: EA
+BFE1: 00: 00
+BFE2: 00: 00
+BFE3: 00: 20

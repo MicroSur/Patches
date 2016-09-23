@@ -1,0 +1,9 @@
+<PatchName>Disable switch to AMP at charge 
+<Eng Description>Disabling forced display line with the Сurrent in the 3-d row at charge
+<Rus Description>Отключение принудительного показа строки с Током в третьей строке при зарядке мода.
+
+# eVic_VTC_Mini_V3.01.bin #
+# Disable switch to AMP on charge #
+
+6A74: 39: 00
+6A75: B1: BF

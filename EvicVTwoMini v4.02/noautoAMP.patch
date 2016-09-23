@@ -1,0 +1,8 @@
+<PatchName>Disable switch to AMP at charge 
+<Eng Description>Disabling forced display line with the Сurrent in the 3-d row at charge
+<Rus Description>Отключение принудительного показа строки с Током в третьей строке при зарядке мода.
+# eVic_VTwo_Mini_V4.02.bin #SurPort
+
+852C: 29: 00
+852D: B1: BF
+

@@ -1,0 +1,11 @@
+<PatchName>Power scroll 1W
+<Eng Description>Increase/decrease power with 1 Watt steps.
+<Rus Description>Регулировка мощности с шагом 1 Ватт.
+# RX200_V3.10.bin 31.05.16#
+
+# 1W
+3DEC: 69: 00
+3E38: 69: 00
+3FBA: 69: 00
+4014: 69: 00
+

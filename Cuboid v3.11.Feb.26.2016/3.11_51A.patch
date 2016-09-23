@@ -1,0 +1,9 @@
+<PatchName>Max output current 51A
+<Eng Description>Max output current 51A, 200 W available from 0.1 ohm.
+<Rus Description>Максимальный выходной ток 51А, 200Вт доступно на сопротивлении от 0,1 Ома
+# Cuboid v3.11.Feb.26.2016.bin
+
+9054: C1: 41
+9055: 00: 10
+9058: 01: 41
+9062: 90: 80

@@ -1,0 +1,7 @@
+<PatchName>Change dim timeout (10 sec)
+<Eng Description>Set dim timeout to 10 sec.
+<Rus Description>Гашение экрана через 10 сек.
+
+15D4: 1E: 0A
+446E: 1E: 0A
+48A4: 1E: 0A

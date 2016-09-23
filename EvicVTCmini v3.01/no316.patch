@@ -1,0 +1,11 @@
+<PatchName>Delete 316 label
+<Eng Description>Delete 316 in SS TCR mode.
+<Rus Description>Не показывать цифры 316 в строке с Temp SS 316.
+
+# eVic_VTC_Mini_V3.01.bin #
+# Delete 316 in SS TCR mode #
+
+6524: 04: 0D 
+6525: 22: E0 
+7384: 04: 0D
+7385: 22: E0

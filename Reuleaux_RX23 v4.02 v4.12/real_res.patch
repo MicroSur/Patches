@@ -1,0 +1,8 @@
+<PatchName>Realtime resistance in all modes
+<Eng Description>Display realtime resistance in all modes same.
+<Rus Description>Отображение реального сопротивления во всех режимах.
+# RX23 4.02 4.12 #SuR
+
+#real always
+6974: 01: 13
+6975: 28: E0

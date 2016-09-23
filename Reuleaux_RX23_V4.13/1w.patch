@@ -1,0 +1,23 @@
+﻿<PatchName>Power scroll 1W
+
+<Eng Description>Increase/decrease power with 1 Watt steps.
+
+<Rus Description>Регулировка мощности с шагом 1 Ватт.
+
+#RX23_4.13@Sur
+
+
+## 1W
+
+41A6: 69: 00
+
+42BA: 69: 00
+
+43D0: 69: 00
+
+44E0: 69: 00
+
+45AC: 69: 00
+
+470A: 69: 00
+

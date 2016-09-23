@@ -1,0 +1,93 @@
+<PatchName>Turn mod Off after a few puffs.
+<Eng Description>Turn off the mod after a few puffs. The puffs counter is reset after that number of puffs and when mod falls asleep or off manually.
+<Rus Description>Выключение мода после заданного количества затяжек. 
+<Rus Description>Счетчик затяжек обнуляется после этого или когда мод уходит в сон или выключен вручную.
+# eVic_VTwo_Mini_V4.02.bin #Sur
+
+#in StopFire
+41A0: 1A: 09 @PARAM@1@1@1@0@Set max puffs to device power off@Количество тяг до выключения мода.
+41A1: 4A: 22
+
+41AC: C1: 0B # goto cut1 when reached
+41AD: F8: F0
+41AE: 34: 71
+41AF: 41: B9
+
+#in SleepIfIdle
+8E38: FC: 06 # goto cut2 when sleep
+8E39: F7: F0
+8E3A: A4: 39
+8E3B: FF: BB
+ 
+#cut1
+F492: 00: C1 #zero puffs
+F493: 00: F8
+F494: 00: 34
+F495: 00: 41
+
+F496: 00: CA
+F497: 00: 6F
+F498: 00: 42
+F499: 00: F0
+F49A: 00: 01 
+F49B: 00: 00
+F49C: 00: C8 #set status to Off
+F49D: 00: 67
+F49E: 00: DF 
+F49F: 00: F8
+F4A0: 00: 1E 
+F4A1: 00: 00
+F4A2: 00: 80 #screen=0
+F4A3: 00: F8
+F4A4: 00: 00 
+F4A5: 00: 40
+F4A6: 00: 07 
+F4A7: 00: 48
+F4A8: 00: 04 #SleepTimer=0
+F4A9: 00: 80
+
+F4AA: 00: F4 #return1
+F4AB: 00: F7
+F4AC: 00: 81
+F4AD: 00: BE
+
+#cut2
+F4AE: 00: F6 #gotoSleep
+F4AF: 00: F7
+F4B0: 00: 69
+F4B1: 00: FC
+
+F4B2: 00: 05
+F4B3: 00: 49
+F4B4: 00: 00
+F4B5: 00: 20
+  
+F4B6: 00: C1 #zero puffs
+F4B7: 00: F8
+F4B8: 00: 34
+F4B9: 00: 01
+
+F4BA: 00: F9 #return2
+F4BB: 00: F7
+F4BC: 00: BF
+F4BD: 00: BC
+
+#DATA
+F4BE: 00: FA
+F4BF: 00: 00
+F4C0: 00: 00
+F4C1: 00: 20
+
+F4C2: 00: 00
+F4C3: 00: 00
+
+F4C4: 00: B4
+F4C5: 00: 00
+F4C6: 00: 00
+F4C7: 00: 20
+
+F4C8: 00: B0
+F4C9: 00: 02
+F4CA: 00: 00
+F4CB: 00: 20
+

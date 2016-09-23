@@ -1,0 +1,41 @@
+﻿<Patch Definition="iStick TC100W 1.10" Name="Keys ReMap" Version="1.0" Author="yii">
+  <Description>Keys ReMap. Изменяет реакцию на клавиши.
+
+Во включенном состоянии / When power on
+
+2 клика на Fire - напряжение батареи / 2 Fire clicks - battery voltage
+
+
+В выключенном состоянии / When power off
+
+6 кликов на Fire - температура / 6 Fire clicks - temp
+Fire- - версия прошивки / Fire- - fw version
+</Description>
+  <Data>
+00000E7E: 45 5C
+00000E88: 54 40
+00000E90: 53 50
+00003E68: 08 0A
+00003E6A: 01 02
+00003E6C: 84 0E
+00003E6D: D1 D0
+00003E6E: 95 01
+00003E6F: F8 28
+00003E70: 25 82
+00003E71: 00 D1
+00003E72: 08 95
+00003E73: B1 F8
+00003E74: 0F 25
+00003E75: 20 00
+00003E76: 20 08
+00003E77: 72 B1
+00003E78: 01 0F
+00003E7A: BC 20
+00003E7B: E7 72
+00003E7C: 0A 01
+00003E7D: 28 20
+00003E7E: 05 BA
+00003E7F: D0 E7
+00003E80: 14 06
+</Data>
+</Patch>

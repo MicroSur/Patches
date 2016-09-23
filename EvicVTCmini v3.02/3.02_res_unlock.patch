@@ -1,0 +1,83 @@
+<PatchName>Resistance unlock/erase instead of Keylock function
+<Eng Description>Erasing resistance with Up & Down keys simultaneously. Without key_lock function.
+<Rus Description>Сброс сопротивления атомайзера кнопками + -, вместо функции блокировки кнопок.
+# eVic_VTC_Mini_V3.02.bin #
+
+# branch to resistance erase
+104C: 06: 0B
+104D: F0: F0
+104E: 9E: B0
+104F: FD: FA
+# Always Unlocked
+43BC: 41: 21
+
+# Resistance erase
+C5B0: 00: 0C
+C5B1: 00: 49
+C5B2: 00: 88
+C5B3: 00: 7B
+C5B4: 00: 01
+C5B5: 00: 28
+C5B6: 00: 05
+C5B7: 00: D0
+C5B8: 00: 38
+C5B9: 00: B1
+C5BA: 00: 02
+C5BB: 00: 28
+C5BC: 00: 08
+C5BD: 00: D0
+C5BE: 00: 03
+C5BF: 00: 28
+C5C0: 00: 0A
+C5C1: 00: D0
+C5C2: 00: 0C
+C5C3: 00: E0
+C5C4: 00: 00
+C5C5: 00: 20
+C5C6: 00: C8
+C5C7: 00: 83
+C5C8: 00: 09
+C5C9: 00: E0
+C5CA: 00: 00
+C5CB: 00: 20
+C5CC: 00: 08
+C5CD: 00: 84
+C5CE: 00: 06
+C5CF: 00: E0
+C5D0: 00: 00
+C5D1: 00: 20
+C5D2: 00: A1
+C5D3: 00: F8
+C5D4: 00: 84
+C5D5: 00: 00
+C5D6: 00: 02
+C5D7: 00: E0
+C5D8: 00: 00
+C5D9: 00: 20
+C5DA: 00: A1
+C5DB: 00: F8
+C5DC: 00: 90
+C5DD: 00: 00
+
+C5DE: 00: FB
+C5DF: 00: F7
+C5E0: 00: D5
+C5E1: 00: BA
+
+C5E4: 00: 58 'data
+C5E5: 00: 02
+C5E6: 00: 00
+C5E7: 00: 20
+
+#Words change
+# Key: Omega
+CB92: 90: A6 
+CB93: 70: AA
+CB94: 84: A6
+# Unlock: Erased
+CBCE: 9A: 8A
+CBCF: 79: 7D
+CBD0: 91: 6C
+CBD1: 7A: 7E
+CBD2: 6E: 70
+CBD3: 76: 6F

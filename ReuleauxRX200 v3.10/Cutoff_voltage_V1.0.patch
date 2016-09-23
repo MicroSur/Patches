@@ -1,0 +1,7 @@
+<PatchName>Cutoff voltage
+<Eng Description>Changes the cut-off voltage (to 2.80 V by default).
+<Rus Description>Изменяет напряжение отсечки (по умолчанию до 2,80 В).
+# Reuleaux_RX200_V3.10.bin
+
+37C2: 9B: 8C ; 9B ~ 3.10 V / 8C ~ 2.80 V
+

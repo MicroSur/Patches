@@ -1,0 +1,43 @@
+<PatchName>Center 1st line on screen
+<Eng Description>Center 1st line on screen (POWER, BYPASS etc).
+<Rus Description>Надписи Power, Bypass, TCR итд в первой строке отцентрованы. Так же устанавливается патч убивания 316 в строке SS316.
+
+# eVic_VTC_Mini_V3.01.bin #
+# Center 1st line on screen #
+
+66AE: 00: 09 # POWER
+6736: 00: 06 # BYPASS
+
+64FC: 00: 08 # TEMP 	TI
+735C: 00: 08 # TEMP TI
+
+6508: 20: 29 # temp TI
+7368: 20: 29 #  temp ti
+
+6510: 00: 06 # temp SS
+7370: 00: 06 # temp ss
+
+651C: 20: 27 # ss
+737C: 20: 27 # SS
+
+64D8: 00: 08 # TEMP and TCR
+64E6: 20: 28 # NI
+657A: 00: 08 # TCR
+731E: 00: 08 # TCR
+732C: 20: 28 # NI
+
+6550: 1D: 25 # M
+659C: 1D: 25 # 123
+73B2: 1D: 25 # M
+
+6564: 25: 2D 
+65B0: 25: 2D 
+73C8: 25: 2D # 123
+
+
+
+# Delete 316 in SS TCR line #
+6524: 04: 0D
+6525: 22: E0
+7384: 04: 0D
+7385: 22: E0

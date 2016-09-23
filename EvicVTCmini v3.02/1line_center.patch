@@ -1,0 +1,60 @@
+<PatchName>Center 1st line on screen
+<Eng Description>Center 1st line on screen (POWER, BYPASS etc).
+<Rus Description>Надписи Power, Bypass, TEMP итд в первой строке отцентрованы. Так же устанавливается патч убивания 316 в строке SS316.
+
+# eVic_VTC_Mini_V3.02.bin #
+# Center 1st line on screen #
+
+6A2A: 00: 09 # POWER
+6AC0: 00: 06 # BYPASS
+
+683A: 00: 08 # TEMP /TI
+77B0: 00: 08 # TEMP /TI
+690E: 00: 08 # TEMP
+684E: 00: 08 # TEMP /SS
+77C4: 00: 08 # TEMP /SS
+
+6846: 20: 29 # TI
+77BC: 20: 29 # TI
+
+685A: 20: 27 # SS
+77D0: 20: 27 # SS
+
+6824: 20: 28 # NI
+7782: 20: 28 # NI
+
+6816: 00: 08 # TEMP and TCR
+6886: FE: 00 # no print TCR in ### M#
+6887: F7: BF ##
+6888: E3: 00 ###
+6889: FC: BF ####
+
+68D8: 00: 08 # TCR
+68DC: FE: 00 # no print TCR in ### M#
+68DD: F7: BF ##
+68DE: B8: 00 ###
+68DF: FC: BF ####
+
+7774: 00: 08 # TEMP and TCR
+77FE: FD: 00 # no print TCR in ### M#
+77FF: F7: BF ##
+7800: 27: 00 ###
+7801: FD: BF ####
+
+68A8: 31: 0D # M
+68C4: 39: 15 # 1-2-3
+689E: 19: 1F # digit ###
+
+68F4: 19: 1F # digit ###
+
+7822: 31: 0D # M
+7836: 39: 15 # 1-2-3
+7818: 19: 1F # digit ###
+
+6D52: 01: 00 # second line on main screen off
+
+# Delete 316 in SS TCR line #
+6862: 04: 0D
+6863: 22: E0
+77D8: 04: 0D
+77D9: 22: E0

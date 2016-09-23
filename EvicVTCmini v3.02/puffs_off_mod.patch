@@ -1,0 +1,107 @@
+<PatchName>Turn mod Off after a few puffs (default 10).
+<Eng Description>Turn off the mod after a few puffs. The puffs counter is reset after that number of puffs and when mod falls asleep or off manually.
+<Rus Description>Выключение мода после заданного количества затяжек. 
+<Rus Description>Счетчик затяжек обнуляется после этого или когда мод уходит в сон или выключен вручную.
+# eVic_VTC_Mini_V3.02.bin #Sur
+
+#in StopFire
+2ED0: 1A: 09  # Set puffs max 10
+
+2ED1: 4A: 22
+2EDC: C1: 07 # goto cut1 when reached
+2EDD: F8: F0
+2EDE: 34: 0F
+2EDF: 41: BF
+
+#in SleepIfIdle
+7C64: FC: 03 # goto cut2 when sleep
+7C65: F7: F0
+7C66: DE: 59
+7C67: FD: B8
+
+#cut1
+ACFE: 00: C1 #zero puffs
+ACFF: 00: F8
+AD00: 00: 34
+AD01: 00: 41
+AD02: 00: CA
+AD03: 00: 6F
+AD04: 00: 42
+AD05: 00: F0
+AD06: 00: 01
+AD07: 00: 00
+AD08: 00: C8 #set status to Off
+AD09: 00: 67
+AD0A: 00: DF
+AD0B: 00: F8
+AD0C: 00: 1E
+AD0D: 00: 00
+AD0E: 00: 80 #screen=0
+AD0F: 00: F8
+AD10: 00: 00
+AD11: 00: 40
+AD12: 00: 07
+AD13: 00: 48
+AD14: 00: 04 #SleepTimer=0
+AD15: 00: 80
+
+AD16: 00: F8 #return1
+AD17: 00: F7
+AD18: 00: E3
+AD19: 00: B8
+
+#cut2
+AD1A: 00: F9 #gotoSleep
+AD1B: 00: F7
+AD1C: 00: 83
+AD1D: 00: FD
+AD1E: 00: 05
+AD1F: 00: 49
+AD20: 00: 00
+AD21: 00: 20
+AD22: 00: C1 #zero puffs
+AD23: 00: F8
+AD24: 00: 34
+AD25: 00: 01
+AD26: 00: FC #return2
+AD27: 00: F7
+AD28: 00: 9F
+AD29: 00: BF
+
+#DATA
+AD2A: 00: F2
+AD2B: 00: 00
+AD2C: 00: 00
+AD2D: 00: 20
+
+AD2E: 00: 00
+AD2F: 00: 00
+
+AD30: 00: AC
+AD31: 00: 00
+AD32: 00: 00
+AD33: 00: 20
+
+AD34: 00: 58
+AD35: 00: 02
+AD36: 00: 00
+AD37: 00: 20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+<PatchName>Big clock timeout
+<Eng Description>Set big clock show time in seconds.
+<Rus Description>Изменение времени показа больших часов в секундах.
+# eVic_VTwo_Mini_V4.02.bin #Sur
+
+77D0: 3C: 3C # 60
+77D4: 78: 78 # 120
+
+77D8: 4F: 05 # 5
+77D9: F4: 20
+77DA: 96: 00
+77DB: 70: BF
+
+77DE: 4F: 0A # 10
+77DF: F4: 20
+77E0: 16: 00
+77E1: 70: BF
+
+77E4: 4F: 0F # 15
+77E5: F4: 20
+77E6: 61: 00
+77E7: 70: BF
+
+77EA: 4F: 14 # 20
+77EB: F4: 20
+77EC: 96: 00
+77ED: 60: BF
+
+77F0: 4F: 1E # 30 @PARAM@1@1@1@0@Last choise in list in seconds for menu@Установка своего времени в секундах для выбора в меню
+77F1: F4: 20
+77F2: E1: 00
+77F3: 60: BF
+
+#menu3 Min>Sec
+103A4: A8: AE
+103A6: 8A: 86
+103A8: 8F: 84
+#menu4 Min>Sec
+103B6: A8: AE
+103B8: 8A: 86
+103BA: 8F: 84
+#menu5 Min>Sec
+103C8: A8: AE
+103CA: 8A: 86
+103CC: 8F: 84
+#menu6 Min>Sec
+103DA: A8: AE
+103DC: 8A: 86
+103DE: 8F: 84
+#menu7 Min>Sec
+103EC: A8: AE
+103EE: 8A: 86
+103F0: 8F: 84

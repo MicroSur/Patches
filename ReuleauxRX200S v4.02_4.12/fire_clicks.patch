@@ -1,0 +1,9 @@
+<PatchName>Fire button clicks changing (3,2,4,5)
+<Eng Description>Reduce the number of clicks on the Fire button to call the various events.
+<Rus Description>Уменьшение количества нажатий на кнопку Пуск для вызова событий.
+ReuleauxRX200S v4.02_4.12 @Sur
+
+48C2: 05: 03 ; on-off clicks
+48CC: 03: 02 ; menu
+48D4: 0A: 04 ; show fw ver
+48D8: 14: 05 ; show temp
